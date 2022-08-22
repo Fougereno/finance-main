@@ -7,7 +7,7 @@ html {
 }
 body {
     font-family: sans-serif;
-    background-color: $bg;
+    background-color: $white;
     font-family: Arial, Helvetica, sans-serif;
 }
 *,
@@ -16,19 +16,11 @@ body {
     box-sizing: border-box;
 }
 a {
-    color: $white;
+    color: $black;
     text-decoration: none
-}
-.wrap {    
-    max-width: 1920px;
 }
 
 @import"blocks/header";
 @import"blocks/footer";
 @import"blocks/nav";
-@import"blocks/btn";
-@import"blocks/card";
-@import"blocks/slider";
-@import"blocks/services";
-@import"blocks/benefits";
-@import"blocks/history";
+@import"blocks/button";
