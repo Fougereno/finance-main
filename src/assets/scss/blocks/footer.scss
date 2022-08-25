@@ -1,0 +1,31 @@
+.footer {
+    background-color: $lightblue;
+    min-height: 669px;
+    @include flex(column, flex-end, center);
+}
+.footer__main {
+    @include flex(row, space-between, center);
+}
+.footer__wrap {
+    max-width: 1245px;
+    margin: 0 auto;
+}
+.footer__main_left {
+    max-width: 270px;
+    @include flex(column, center, flex-start);
+}
+.footer__h2 {
+    color: $blue;
+    font-size: 18px;
+}
+.footer__a {
+    font-size: 14px;
+    color: $black;
+}
+.footer__nav {
+    @include flex(row, space-between, center);
+    max-width: 847px
+}
+.footer__navitem {
+    @include flex(column, center, flex-start);
+}

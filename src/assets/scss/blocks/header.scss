@@ -1,2 +1,24 @@
 .header {
+    background-color: $lightblue;
+    min-height: 630px;
+}
+.header__wrap {
+    max-width: 1245px;
+    margin: 0 auto;
+}
+.header__h1 {
+    font-size: 44px;
+    font-weight: 700;
+}
+.header__p {
+    font-weight: 300;
+    font-size: 18px;
+}
+.header__main {
+    @include flex(row, center, center); 
+    padding-top: 61px;
+}
+.header__main__wrap {
+    max-width: 667px;
+    @include flex(column, center, flex-start);
 }

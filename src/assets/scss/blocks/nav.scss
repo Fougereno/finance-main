@@ -1,0 +1,41 @@
+.nav {
+    @include flex(column, center, center);
+    min-height: 133px;
+}
+.nav_green, .nav_blue {
+    @include flex(row, space-between, center);    
+    width: 100%;
+}
+.nav_green {
+    padding: 20px 0;
+    color: $green;
+    font-size: 12px;
+    font-weight: 400;
+    flex-wrap: wrap;
+}
+.nav__ul {
+    @include flex(row, space-between, center);
+}
+.nav__ul_blue {
+    color: $blue;
+    font-size: 18px;
+}
+.nav__tel {
+    font-weight: 700;
+    font-size: 16px;
+}
+.nav__li {
+    padding-right: 24px;
+    cursor: pointer;
+}
+.nav__lang {
+    background-color: $white;
+}
+.nav__line {
+    height: 1px;
+    background-color: $green;
+    width: 100%;
+}
+.header__buttons {
+    @include flex(row, space-between, center);    
+}
