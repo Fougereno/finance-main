@@ -1,0 +1,8 @@
+.main__wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.main__products {
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+}
