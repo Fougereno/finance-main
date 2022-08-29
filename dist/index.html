@@ -22,7 +22,8 @@
                     <nav class="nav">
                         <div class="nav_green">
                             <p>Инвестиционно-финансовая компания</p>
-                            <p>Город  Казань</p><!--+svg icon -->
+                            <img src="assets\images\arrow.svg" alt="">
+                            <p>Город  Казань</p>
                             <ul class="nav__ul">
                                 <li class="nav__li">О компании</li>
                                 <li class="nav__li">Отзывы</li>
@@ -30,8 +31,9 @@
                                 <li class="nav__li">Отчетность</li>
                                 <li class="nav__li">Наши партнеры</li>
                                 <li class="nav__li">Сотрудничество</li>
-                                <li class="nav__li">Контакты</li><!--+svg icon -->
+                                <li class="nav__li">Контакты</li>
                             </ul>
+                            <img src="assets\images\map.svg" alt="">
                             <a href="" class=" nav__lang">RU</a>
                         </div>
                         <span class="nav__line"></span>
@@ -41,10 +43,12 @@
                                 <li class="nav__li">Инвестиции</li>
                                 <li class="nav__li">Рассрочка</li>
                                 <li class="nav__li">Калькулятор</li>
+                                <img src="assets\images\tel.svg" alt="">
                                 <li class="nav__li nav__tel">8 800 2700 700</li>
+                                <img src="assets\images\glass.svg" alt="">
                             </ul>
-                            <a href="#" class="button">Личный Кабинет</a>
-                            <a href="#" class="button button_white">Онлайн-заявка</a>
+                            <a href="#" class="button nav__button">Личный Кабинет</a>
+                            <a href="#" class="button button_white nav__button">Онлайн-заявка</a>
                         </div>
                     </nav>
                     <div class="header__main">
@@ -56,7 +60,11 @@
                                 <a href="#" class="button button_white">Подробнее</a>
                             </div>
                         </div>
-                        <img src="assets\images\person.png" alt="">
+                        <div class="header__img">
+                            <img src="assets\images\person.png" alt="">
+                            <img class="header__img__item" src="assets\images\17.png" alt="">
+                            <img class="header__img__item" src="assets\images\circles.png" alt="">
+                        </div>
                         <div class="header__arrows">
                             <a href="#"><</a>
                             <a href="#">></a>
@@ -67,96 +75,208 @@
         <main class="main">
             <div class="container">
             <div class="main__wrap">
-                <h1 class="main__h1">Рекомендуемые продукты</h1>
                 <div class="main__products">
-                    <div class="card">
-                        <div class="card__wrap">
-                            <p class="card__superscript">Инвестиции</p>
-                            <h1 class="card__h1">Вклад Комфорт</h1>
-                            <div class="card__innerwrap">
-                                <div class="card__innerwrap__item">
-                                    <h2 class="card__h2">17,5%</h2>
-                                    <p class="card__p_black">Доходность, до</p>
+                    <h1 class="main__h1">Рекомендуемые продукты</h1>
+                    <div class="main__products__cards">
+                        <div class="card">
+                            <div class="card__inner">
+                                <div class="card__wrap">
+                                    <p class="card__superscript">Инвестиции</p>
+                                    <h1 class="card__h1">Вклад Комфорт</h1>
+                                    <div class="card__innerwrap">
+                                        <div class="card__innerwrap__item">
+                                            <h2 class="card__h2">17,5%</h2>
+                                            <p class="card__p_black">Доходность, до</p>
+                                        </div>
+                                        <div class="card__innerwrap__item">
+                                            <h2 class="card__h2">90 дней</h2>
+                                            <p class="card__p_black">Срок вклада, от</p>
+                                        </div>
+                                    </div>
+                                    <p class="card__p">Доход выплачивается по окончании срока договора, возможно досрочное расторжение</p>
+                                    <div class="card__innerwrap">
+                                        <button class="button button_small">Инвестировать</button>
+                                        <button class="button button_white button_small">Подробнее</button>
+                                    </div>
                                 </div>
-                                <div class="card__innerwrap__item">
-                                    <h2 class="card__h2">90 дней</h2>
-                                    <p class="card__p_black">Срок вклада, от</p>
-                                </div>
-                            </div>
-                            <p class="card__p">Доход выплачивается по окончании срока договора, возможно досрочное расторжение</p>
-                            <div class="card__innerwrap">
-                                <button class="button">Инвестировать</button>
-                                <button class="button button_white">Подробнее</button>
-                            </div>
-                        </div>
-                        <img src="assets/images/img.png" alt="">
-                    </div>
-                    <div class="card card_small">
-                        <div class="card__wrap">
-                            <p class="card__superscript">Инвестиции</p>
-                            <h1 class="card__h1">Вклад Комфорт</h1>
-                            <div class="card__innerwrap">
-                                <div class="card__innerwrap__item">
-                                    <h2 class="card__h2">17,5%</h2>
-                                    <p class="card__p_black">Доходность, до</p>
-                                </div>
-                                <div class="card__innerwrap__item">
-                                    <h2 class="card__h2">90 дней</h2>
-                                    <p class="card__p_black">Срок вклада, от</p>
-                                </div>
-                            </div>
-                            <p class="card__p">Доход выплачивается по окончании срока договора, возможно досрочное расторжение</p>
-                            <div class="card__innerwrap">
-                                <button class="button">Инвестировать</button>
-                                <button class="button button_white">Подробнее</button>
+                                <img src="assets/images/img.png" alt="">
                             </div>
                         </div>
-                        <img src="assets/images/img.png" alt="">
-                    </div>
-                    <div class="card card_small">
-                        <div class="card__wrap">
-                            <p class="card__superscript">Инвестиции</p>
-                            <h1 class="card__h1">Вклад Комфорт</h1>
-                            <div class="card__innerwrap">
-                                <div class="card__innerwrap__item">
-                                    <h2 class="card__h2">17,5%</h2>
-                                    <p class="card__p_black">Доходность, до</p>
+                        <div class="card">
+                            <div class="card__inner card_small">
+                                <div class="card__wrap">
+                                    <p class="card__superscript">Финансирование</p>
+                                    <h1 class="card__h1">Авто Рассрочка</h1>
+                                    <div class="card__innerwrap">
+                                        <div class="card__innerwrap__item">
+                                            <h2 class="card__h2">5 млн</h2>
+                                            <p class="card__p_black">Сумма, до</p>
+                                        </div>
+                                        <div class="card__innerwrap__item">
+                                            <h2 class="card__h2">3 лет</h2>
+                                            <p class="card__p_black">Срок, до</p>
+                                        </div>
+                                    </div>
+                                    <p class="card__p">Отсутствие обязательности страхования КАСКО. Первоначальный взнос от 10%</p>
+                                    <div class="card__innerwrap">
+                                        <button class="button">Оформить</button>
+                                        <button class="button button_white">Подробнее</button>
+                                    </div>
                                 </div>
-                                <div class="card__innerwrap__item">
-                                    <h2 class="card__h2">90 дней</h2>
-                                    <p class="card__p_black">Срок вклада, от</p>
-                                </div>
-                            </div>
-                            <p class="card__p">Доход выплачивается по окончании срока договора, возможно досрочное расторжение</p>
-                            <div class="card__innerwrap">
-                                <button class="button">Инвестировать</button>
-                                <button class="button button_white">Подробнее</button>
-                            </div>
-                        </div>
-                        <img src="assets/images/img.png" alt="">
-                    </div>
-                    <div class="card">
-                        <div class="card__wrap">
-                            <p class="card__superscript">Инвестиции</p>
-                            <h1 class="card__h1">Вклад Комфорт</h1>
-                            <div class="card__innerwrap">
-                                <div class="card__innerwrap__item">
-                                    <h2 class="card__h2">17,5%</h2>
-                                    <p class="card__p_black">Доходность, до</p>
-                                </div>
-                                <div class="card__innerwrap__item">
-                                    <h2 class="card__h2">90 дней</h2>
-                                    <p class="card__p_black">Срок вклада, от</p>
-                                </div>
-                            </div>
-                            <p class="card__p">Доход выплачивается по окончании срока договора, возможно досрочное расторжение</p>
-                            <div class="card__innerwrap">
-                                <button class="button">Инвестировать</button>
-                                <button class="button button_white">Подробнее</button>
+                                <img class="card__img_small" src="assets/images/img2.png" alt="">
                             </div>
                         </div>
-                        <img src="assets/images/img.png" alt="">
+                        <div class="card">
+                            <div class="card__inner card_small">
+                                <div class="card__wrap">
+                                    <p class="card__superscript">Финансирование</p>
+                                    <h1 class="card__h1">Экспресс Рассрочка</h1>
+                                    <div class="card__innerwrap">
+                                        <div class="card__innerwrap__item">
+                                            <h2 class="card__h2">1 млн</h2>
+                                            <p class="card__p_black">Сумма, до</p>
+                                        </div>
+                                        <div class="card__innerwrap__item">
+                                            <h2 class="card__h2">3 лет</h2>
+                                            <p class="card__p_black">Срок, до</p>
+                                        </div>
+                                    </div>
+                                    <p class="card__p">Финансирование физическим лицам для приобретения необходимых товаров</p>
+                                    <div class="card__innerwrap">
+                                        <button class="button">Оформить</button>
+                                        <button class="button button_white">Подробнее</button>
+                                    </div>
+                                </div>
+                                <img class="card__img_small" src="assets/images/img3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__inner">
+                                <div class="card__wrap">
+                                    <p class="card__superscript">Инвестиции</p>
+                                    <h1 class="card__h1">Вклад Активный</h1>
+                                    <div class="card__innerwrap">
+                                        <div class="card__innerwrap__item">
+                                            <h2 class="card__h2">16,5%</h2>
+                                            <p class="card__p_black">Доходность, до</p>
+                                        </div>
+                                        <div class="card__innerwrap__item">
+                                            <h2 class="card__h2">90 дней</h2>
+                                            <p class="card__p_black">Срок вклада, от</p>
+                                        </div>
+                                    </div>
+                                    <p class="card__p">Доход выплачивается по окончании срока договора, возможно досрочное расторжение</p>
+                                    <div class="card__innerwrap">
+                                        <button class="button">Инвестировать</button>
+                                        <button class="button button_white">Подробнее</button>
+                                    </div>
+                                </div>
+                                <img src="assets/images/img4.png" alt="">
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="main__count">
+                    <div class="main__count_blue">
+                        <div class="main__count_blue__inner">
+                            <div class="main__count_blue__item">
+                                <img src="assets/images/img-blue.svg" alt="">
+                                <p class="main__count__p_white">Инвестиционные вклады НурФинанс</p>
+                            </div>
+                        </div>
+                        <div class="main__count_blue__inner">
+                            <div class="main__count_blue__item">
+                                <img src="assets/images/img-blue2.svg" alt="">
+                                <p class="main__count__p_white">Потребительская рассрочка НурФинанс</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__count__wrap">
+                        <div class="main__count__eval">
+                            <h1 class="main__h1">Рассчитай свои накопления и доход</h1>
+                            
+                        </div>
+                        <div class="main__count__graph"></div>
+                        <div class="main__count__card card">
+                            <div class="card__innerwrap__item">
+                                <h2 class="card__h2">12,5%</h2>
+                                <p class="card__p_black">Доходность</p>
+                            </div>
+                            <div class="card__innerwrap__item">
+                                <h2 class="card__h2">282 366 ₽</h2>
+                                <p class="card__p_black">Сумма доходности</p>
+                            </div>
+                            <div class="card__innerwrap__item">
+                                <h2 class="card__h2">1 282 366 ₽</h2>
+                                <p class="card__p_black">Итоговая сумма</p>
+                            </div>
+                            <a href="" class="button">Инвестировать</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="main__benefits">
+                    <h1 class="main__h1">Ваши возможности с НурФинанс</h1>
+                    <div class="main__benefits__wrap">
+                        <div class="main__benefits_left">
+                            <div class="main__benefits_left__wrap">
+                                <div class="main__benefits_left__item">
+                                    <img src="assets/images/lefticon.svg" alt="">
+                                    <p>Накапливайте, принося пользу окружающим (обществу)</p>
+                                </div>
+                                <div class="main__benefits_left__item">
+                                    <img src="assets/images/lefticon2.svg" alt="">
+                                    <p>Зарабатывайте честно и справедливо</p>
+                                </div>
+                                <div class="main__benefits_left__item">
+                                    <img src="assets/images/lefticon3.svg" alt="">
+                                    <p>Вкладывайте в реальные проверенные сделки</p>
+                                </div>
+                                <div class="main__benefits_left__item">
+                                    <img src="assets/images/lefticon4.svg" alt="">
+                                    <p>Обеспечьте вложения надежными активами</p>
+                                </div>
+                            </div>
+                            <a href="" class="button button_small">Инвестиционные продукты</a>
+                        </div>
+                        <div class="main__benefits_right">
+                            <div class="main__benefits_right-top">
+                                <div class="main__benefits_right-top__column">
+                                    <h2>Получайте повышенный доход от вложений</h2>
+                                    <div class="main__graph graph"></div>
+                                </div>
+                                <div class="main__benefits_right-top__column">
+                                    <h2>Инвестируйте со стабильным результатом</h2>
+                                    <div class="main__graph graph"></div>
+                                </div>
+                            </div>
+                            <div class="main__benefits_right-bottom">
+                                <h2>Возвращайте свои средства вовремя</h2>
+                                <div class="main__benefits__line"></div>
+                                <div class="main__benefits_right-bottom__columns">
+                                    <div class="main__benefits_right-bottom__column">
+                                        <h3>Недвижимость низкая ликвидность</h3>
+                                        <p>Срок возврата от 3 месяцев</p>
+                                    </div>
+                                    <div class="main__benefits_right-bottom__column">
+                                        <h3>НурФинанс высокая ликвидность</h3>
+                                        <p>Срок возврата от 3 дней</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__feedback">
+                    <h1 class="main__h1">Отзывы клиентов</h1>
+                    <div class="main__feedbaack__wrap">
+                        <div class="main__feedback__arrow"><</div>
+                        <div class="main__feedback__arrow">></div>
+                        <a href="" class="button button_white button_small">Смотреть больше отзывов</a>
+                    </div>
+                </div>
+                <div class="main__info">
+                    <h1 class="main__h1">Полезная информация</h1>
                 </div>
             </div>
             
@@ -175,9 +295,36 @@
                                 <h2 class="footer__h2">Казань, ул. Мавлютова, дом 31</h2>
                                 <p class="footer__p">Мы работаем с 08:00 до 20:00</p>
                             </div>
+                            <div class="footer__social">
+                                <div class="footer__social__wrap">
+                                    <div class="footer__social__item">
+                                        <img src="assets/images/social.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="footer__social__wrap">
+                                    <div class="footer__social__item">
+                                        <img src="assets/images/social2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="footer__social__wrap">
+                                    <div class="footer__social__item">
+                                        <img src="assets/images/social3.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="footer__social__wrap">
+                                    <div class="footer__social__item">
+                                        <img src="assets/images/social4.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="footer__social__wrap">
+                                    <div class="footer__social__item">
+                                        <img src="assets/images/social5.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="footer__main_right">
-                            <input type="text" class="footer__search">
+                            <input type="text" placeholder="Поиск по услугам" class="footer__search">
                             <div class="footer__nav">
                                 <div class="footer__navitem">
                                     <h2 class="footer__h2">Инвестиции</h2>
@@ -196,7 +343,7 @@
                                     <a href="" class="footer__a">Отзывы по займам</a>
                                 </div>
                                 <div class="footer__navitem">
-                                    <h2 class="footer__h2"></h2>
+                                    <h2 class="footer__h2">Компания</h2>
                                     <a href="" class="footer__a">О компании</a>
                                     <a href="" class="footer__a">Новости</a>
                                     <a href="" class="footer__a">Отчетность</a>
@@ -204,7 +351,7 @@
                                     <a href="" class="footer__a">Реквизиты</a>
                                 </div>
                                 <div class="footer__navitem">
-                                    <h2 class="footer__h2"></h2>
+                                    <h2 class="footer__h2">Информация</h2>
                                     <a href="" class="footer__a">Халяль подробно</a>
                                     <a href="" class="footer__a">Наши партнеры</a>
                                     <a href="" class="footer__a">Частые вопросы</a>
@@ -214,8 +361,8 @@
                             </div>
                         </div>
                     </div>
-                    <h4 class="footer__header">Заголовок о доп моментах</h4>
-                    <p class="footer__p">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. </p>
+                    <h4 class="footer__green-header">Заголовок о доп моментах</h4>
+                    <p class="footer__green-p">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. </p>
                     <div class="footer__comments">
                         <p class="footer__comments-item">© 2021 АО «НурФинанс»</p>
                         <p class="footer__comments-item">Политика конфиденциальности</p>

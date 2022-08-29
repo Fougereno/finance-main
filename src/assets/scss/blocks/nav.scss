@@ -13,6 +13,9 @@
     font-weight: 400;
     flex-wrap: wrap;
 }
+.nav_blue {
+    padding-top: 30px;
+}
 .nav__ul {
     @include flex(row, space-between, center);
 }
@@ -30,12 +33,10 @@
 }
 .nav__lang {
     background-color: $white;
+    padding: 1px 4px;
 }
 .nav__line {
     height: 1px;
     background-color: $green;
     width: 100%;
-}
-.header__buttons {
-    @include flex(row, space-between, center);    
 }
