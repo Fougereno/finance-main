@@ -6,6 +6,7 @@
 .footer__main {
     @include flex(row, space-between, center);
     padding-bottom: 62px;
+    flex-wrap: wrap;
 }
 .footer__wrap {
     max-width: 1245px;
@@ -37,6 +38,7 @@
     @include flex(row, space-between, center);
     max-width: 847px;
     padding-top: 73px;
+    flex-wrap: wrap
 }
 .footer__navitem {
     @include flex(column, center, flex-start);

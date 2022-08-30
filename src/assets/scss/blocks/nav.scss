@@ -15,6 +15,7 @@
 }
 .nav_blue {
     padding-top: 30px;
+    flex-wrap: wrap
 }
 .nav__ul {
     @include flex(row, space-between, center);
@@ -39,4 +40,9 @@
     height: 1px;
     background-color: $green;
     width: 100%;
+}
+@media screen and (max-width: 800px) {
+    .nav_green {
+        display: none;
+    }
 }

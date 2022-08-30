@@ -23,7 +23,9 @@ title:  Finance-main
                         </div>
                         <p class="card__p">Доход выплачивается по окончании срока договора, возможно досрочное расторжение</p>
                         <div class="card__innerwrap">
-                            <button class="button button_small">Инвестировать</button>
+                            <div class="card__btnwrap">
+                                <button class="button button_small">Инвестировать</button>
+                            </div>
                             <button class="button button_white button_small">Подробнее</button>
                         </div>
                     </div>
@@ -122,9 +124,39 @@ title:  Finance-main
         <div class="main__count__wrap">
             <div class="main__count__eval">
                 <h1 class="main__h1">Рассчитай свои накопления и доход</h1>
-                
+                <div class="main__count__inner">
+                    <p class="main__count__p_black">Сумма вклада</p>
+                    <input  class="main__count__range" type="range">
+                </div>
+                <div class="main__count__inner">
+                    <p class="main__count__p_black">Срок инвестирования</p>
+                    <input class="main__count__range" type="range">
+                </div>
+                <div class="main__count__inner">
+                    <p class="main__count__p_black">Порядок выплаты дохода</p>
+                    <div class="main__count__radios">
+                        <input class="main__count__radio" type="radio"  name="payment" value="month">
+                        <label for="month">Ежемесячно</label>
+                        <input class="main__count__radio" type="radio"  name="payment" value="end">
+                        <label for="end">В конце срока</label>
+                    </div>
+                </div>
+                <div class="main__count__inner">
+                    <p class="main__count__p_black">Пополнение вклада</p>
+                    <input  class="main__count__range" type="range">
+                </div>
             </div>
-            <div class="main__count__graph"></div>
+            <div class="main__count__graph">
+                <div class="main__count__lines">
+                    <div class="main__count__line"></div>
+                    <div class="main__count__line"></div>
+                    <div class="main__count__line"></div>
+                    <div class="main__count__line"></div>
+                    <div class="main__count__line"></div>
+                    <div class="main__count__line"></div>
+                    <div class="main__count__line"></div>
+                </div>
+            </div>
             <div class="main__count__card card">
                 <div class="card__innerwrap__item">
                     <h2 class="card__h2">12,5%</h2>
@@ -171,11 +203,29 @@ title:  Finance-main
                 <div class="main__benefits_right-top">
                     <div class="main__benefits_right-top__column">
                         <h2>Получайте повышенный доход от вложений</h2>
-                        <div class="main__graph graph"></div>
+                        <div class="main__benefits__graph">
+                            <div class="main__benefits__lines">
+                                <div class="main__benefits__line"></div>
+                                <div class="main__benefits__line"></div>
+                                <div class="main__benefits__line"></div>
+                                <div class="main__benefits__line"></div>
+                                <div class="main__benefits__line"></div>
+                                <div class="main__benefits__line"></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="main__benefits_right-top__column">
                         <h2>Инвестируйте со стабильным результатом</h2>
-                        <div class="main__graph graph"></div>
+                        <div class="main__benefits__graph">
+                            <div class="main__benefits__lines">
+                                <div class="main__benefits__line"></div>
+                                <div class="main__benefits__line"></div>
+                                <div class="main__benefits__line"></div>
+                                <div class="main__benefits__line"></div>
+                                <div class="main__benefits__line"></div>
+                                <div class="main__benefits__line"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="main__benefits_right-bottom">
@@ -183,12 +233,18 @@ title:  Finance-main
                     <div class="main__benefits__line"></div>
                     <div class="main__benefits_right-bottom__columns">
                         <div class="main__benefits_right-bottom__column">
-                            <h3>Недвижимость низкая ликвидность</h3>
+                            <h3><span class="main__p_bold">Недвижимость</span> низкая ликвидность</h3>
                             <p>Срок возврата от 3 месяцев</p>
+                            <div class="main__scale">
+                                <div class="main__scale_gray"></div>
+                            </div>
                         </div>
                         <div class="main__benefits_right-bottom__column">
-                            <h3>НурФинанс высокая ликвидность</h3>
+                            <h3><span class="main__p_bold">НурФинанс</span> высокая ликвидность</h3>
                             <p>Срок возврата от 3 дней</p>
+                            <div class="main__scale">
+                                <div class="main__scale_blue"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -198,12 +254,77 @@ title:  Finance-main
     <div class="main__feedback">
         <h1 class="main__h1">Отзывы клиентов</h1>
         <div class="main__feedbaack__wrap">
-            <div class="main__feedback__arrow"><</div>
-            <div class="main__feedback__arrow">></div>
+            <div class="main__feedback__arrow">
+                <img src="assets/images/arrow-left.svg" alt="">
+            </div>
+            <div class="main__feedback__arrow">
+                <img src="assets/images/arrow-right.svg" alt="">
+            </div>
+            <div class="main__feedback__items">
+                <div class="main__feedback__item">
+                    <div class="main__feedback__img">
+                        <img src="assets/images/feedback.png" alt="">
+                    </div>
+                    <p>Евгений Садков</p>
+                    <p>Программа  –  Экспресс Рассрочка</p>
+                </div>
+                <div class="main__feedback__item">
+                    <div class="main__feedback__img">
+                        <img src="assets/images/feedback2.png" alt="">
+                    </div>
+                    <p>Анастасия Майер</p>
+                    <p>Инвестиции  –  Вклад Активный</p>
+                </div>
+                <div class="main__feedback__item">
+                    <div class="main__feedback__img">
+                        <img src="assets/images/feedback3.png" alt="">
+                    </div>
+                    <p>Фанзиль Гарипов</p>
+                    <p>Программа  –  Авто Рассрочка</p>
+                </div>
+            </div>
             <a href="" class="button button_white button_small">Смотреть больше отзывов</a>
         </div>
     </div>
     <div class="main__info">
         <h1 class="main__h1">Полезная информация</h1>
+        <div class="main__info__items">
+            <div class="main__info__item">
+                <p class="main__info_green">Ответы</p>
+                <p class="main__info_bold">Часто задаваемые вопросы</p>
+                <div class="main__info__inner">
+                    <img src="assets/images/blue-arrow.svg" alt="">
+                    <p class="main__info__p">Что такое инвестиции? Зачем нужно инвестировать?</p>
+                    <img src="assets/images/blue-arrow.svg" alt="">
+                    <p class="main__info__p">Какие стратегии инвестирования существуют и какую лучше выбрать?</p>
+                    <img src="assets/images/blue-arrow.svg" alt="">
+                    <p class="main__info__p">Как защищены мои инвестиции? Что будет, если компания обанкротится?</p>
+                </div>
+            </div>
+            <div class="main__info__item">
+                <p class="main__info_green">Халяль</p>
+                <p class="main__info_bold">Отличие исламских инвестиций от неисламских</p>
+                <div class="main__info__inner">
+                    <img src="assets/images/blue-arrow.svg" alt="">
+                    <p class="main__info__p">Термин «Риба» - что такое ростовщические операциии?</p>
+                    <img src="assets/images/blue-arrow.svg" alt="">
+                    <p class="main__info__p">Как проверяют компании на соответствие нормам халяль.?</p>
+                    <img src="assets/images/blue-arrow.svg" alt="">
+                    <p class="main__info__p">Термин «Сукук» - эквивалент исламских облигаций</p>
+                </div>
+            </div>
+            <div class="main__info__item">
+                <p class="main__info_green">Полезное</p>
+                <p class="main__info_bold">Школа инвестора</p>
+                <div class="main__info__inner">
+                    <img src="assets/images/blue-arrow.svg" alt="">
+                    <p class="main__info__p">7 финансовых советов на 2021 год. Что делать, чтобы накопить на цель?</p>
+                    <img src="assets/images/blue-arrow.svg" alt="">
+                    <p class="main__info__p">Какие книги надо прочитать инвестору-новичку: топ-5 книг</p>
+                    <img src="assets/images/blue-arrow.svg" alt="">
+                    <p class="main__info__p">Сколько нужно денег, чтобы начать инвестировать</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

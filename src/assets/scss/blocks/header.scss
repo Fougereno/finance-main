@@ -16,6 +16,7 @@
 }
 .header__main {
     @include flex(row, space-between, center); 
+    flex-wrap: wrap;
     padding-top: 61px;
 }
 .header__main__wrap {
@@ -28,7 +29,10 @@
 .header__img__item {
     position: absolute;
     left: 0;
-    opacity: 0.5;
+}
+.header__img__item_first {
+    position: relative;
+    z-index: 100
 }
 .header__buttons {
     @include flex(row, space-between, center);    
