@@ -1,10 +1,18 @@
 .button {
+    display: inline-block;
     border-radius: 28px 0px;
     background-color: $blue;
     padding: 23px;
     color: $white;
     font-size: 14px;
     border: 0;
+    transition: transform 200ms linear, box-shadow 200ms linear;
+    &:hover {
+        transform: scale(1.05);
+    }
+    &:active {
+        box-shadow: 0 0 5px $bluegray;
+    }
 }
 .button_small {
     padding: 14px;

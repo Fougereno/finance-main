@@ -54,7 +54,12 @@
 .main__count__wrap {
     @include flex(row, space-between, flex-start);
 }
+.main__count__graph {
+    position: relative;
+}
 .main__count__lines {
+    position: absolute;
+    width: 100%;
     @include flex(row, space-between, flex-start);
 }
 .main__count__line {
@@ -68,20 +73,34 @@
 }
 .main__count__inner {    
     width: 100%;
+    padding-bottom: 46px;
 }
 .main__count__range {
     width: 100%; 
+    height: 6px;
+	-webkit-appearance: none;
+	border-radius: 8px;
+	background: $brightblue;
+	cursor: pointer;
 }
+.main__count__range::-webkit-slider-thumb {
+	width: 30px;
+	-webkit-appearance: none;
+	height: 30px;
+	border: $blue 12px solid;
+	background: $white;
+	border-radius: 50%;
+  }
 .main__count__graph {
     flex-basis: 388px;
 }
 .main__count__card {
+    @include flex(column, space-between, flex-start);
     border-radius: 10px 10px 120px 10px;
     background: $white;
     flex-basis: 309px;
     min-height: 374px;
-    padding-top: 27px;
-    padding-left: 34px;
+    padding: 27px 57px 30px 34px;
 }
 .main__benefits__wrap {
     @include flex(row, space-between, center);
@@ -108,7 +127,7 @@
 }
 .main__benefits__line {
     background: linear-gradient(180deg, rgba(198, 217, 233, 0) 0%, $lightgreen 49.48%, rgba(198, 217, 233, 0) 100%);
-    width: 423px;
+    width: 100%;
     height: 1px;
 }
 .main__p_bold {

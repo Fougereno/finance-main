@@ -18,28 +18,64 @@
     flex-wrap: wrap
 }
 .nav__ul {
-    @include flex(row, space-between, center);
+    @include flex(row, space-around, center); 
 }
 .nav__ul_blue {
     color: $blue;
     font-size: 18px;
+    flex-basis: 430px;
+}
+.nav__city {
+    position: relative;
+    padding-left: 20px;
+    &::before {
+        content: url(/assets/images/arrow.svg);
+        position: absolute;
+        left: 0;
+    }
 }
 .nav__tel {
+    position: relative;
     font-weight: 700;
     font-size: 16px;
+    padding-left: 18px;
+    color: $blue;
+    &::before {
+        content: url(/assets/images/tel.svg);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
 }
 .nav__li {
     padding-right: 24px;
     cursor: pointer;
 }
+.nav_blue__li {
+    cursor: pointer;
+}
+.nav_green__li:last-child {
+    position: relative;
+    &::after {
+    content: url(/assets/images/map.svg);
+    position: absolute;
+    right: 0;
+    }
+}
 .nav__lang {
     background-color: $white;
     padding: 1px 4px;
+    color: $green;
+
 }
 .nav__line {
     height: 1px;
     background-color: $green;
     width: 100%;
+}
+.nav__button {
+    padding: 14px 30px;
+    min-height: 48px;
 }
 @media screen and (max-width: 800px) {
     .nav_green {

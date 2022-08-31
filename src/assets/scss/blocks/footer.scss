@@ -38,7 +38,7 @@
     @include flex(row, space-between, center);
     max-width: 847px;
     padding-top: 73px;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 .footer__navitem {
     @include flex(column, center, flex-start);
