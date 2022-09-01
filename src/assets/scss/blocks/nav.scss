@@ -17,7 +17,7 @@
     padding-top: 30px;
     flex-wrap: wrap
 }
-.nav__ul {
+.nav__ul, .nav__ul_blue {
     @include flex(row, space-around, center); 
 }
 .nav__ul_blue {
@@ -53,6 +53,20 @@
 }
 .nav_blue__li {
     cursor: pointer;
+    &:hover {
+        text-shadow: 0 0 2px $bluegray;
+    }
+    &:active {
+        text-shadow: 0 0 2px $blue;
+    }
+}
+.nav_green__li {
+    &:hover {
+        text-shadow: 0 0 2px $bluegray;
+    }
+    &:active {
+        text-shadow: 0 0 2px $blue;
+    }
 }
 .nav_green__li:last-child {
     position: relative;
@@ -76,6 +90,14 @@
 .nav__button {
     padding: 14px 30px;
     min-height: 48px;
+}
+@media screen and(max-width: 1276px) {
+    .nav__ul,.nav__city, .nav__tel {
+        display: none;
+    }
+    .nav__search {
+        justify-self: flex-end;
+    }
 }
 @media screen and (max-width: 800px) {
     .nav_green {

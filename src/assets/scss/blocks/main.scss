@@ -53,6 +53,7 @@
 }
 .main__count__wrap {
     @include flex(row, space-between, flex-start);
+    flex-wrap: wrap;
 }
 .main__count__graph {
     position: relative;
@@ -104,6 +105,7 @@
 }
 .main__benefits__wrap {
     @include flex(row, space-between, center);
+    flex-wrap: wrap;
 }
 .main__benefits_left {
     flex-basis: 358px;
@@ -117,9 +119,11 @@
 }
 .main__benefits_right-top {
     @include flex(row, space-between, center);
+    flex-wrap: wrap;
 }
 .main__benefits_right-bottom__columns {
     @include flex(row, space-between, center);
+    flex-wrap: wrap;
 }
 .main__benefits__lines {
     @include flex(column, space-between, flex-start);
@@ -216,7 +220,11 @@
     font-size: 22px;
     padding-bottom: 28px;
 }
-
+@media screen and (max-width: 1500px) {
+    .main__feedback__arrow {
+        display: none;
+    }
+}
 @media screen and (max-width: 1365px) {
     .main__wrap {
         padding: 0 15px;
@@ -227,5 +235,16 @@
     }
     .main__feedback__items {
         overflow: scroll;
+    }
+    .main__count__graph {
+        display: none;
+    }
+    .main__count__eval {
+        max-width: max-content;
+    }
+}
+@media screen and (max-width:1068px) {
+    .main__count__wrap {
+        @include flex(column, center,center);
     }
 }
