@@ -150,6 +150,11 @@
         display: none;
     }
 }
+@media screen and(max-width: 992px) {
+    .header__logo {
+        display: none;
+    }
+}
 @media screen and(max-width: 595px) {
     .header__arrows, .header__points {
         display: none;
