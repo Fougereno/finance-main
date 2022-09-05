@@ -218,27 +218,40 @@
                     </div>
                     <div class="main__count__wrap">
                         <div class="main__count__eval">
-                            <h1 class="main__h1">Рассчитай свои накопления и доход</h1>
+                            <h1 class="main__h1 main__count__h1">Рассчитай свои накопления и доход</h1>
                             <div class="main__count__inner">
-                                <p class="main__count__p_black">Сумма вклада</p>
-                                <input  class="main__count__range" type="range">
+                                <div class="main__count__p__wrap">
+                                    <p class="main__count__p_black">Сумма вклада</p>
+                                    <p class="main__count__p_bold">1 000 000 ₽</p>
+                                </div>
+                                <input  class="main__count__range" type="range" value="85" min="5" max="120">
                             </div>
                             <div class="main__count__inner">
-                                <p class="main__count__p_black">Срок инвестирования</p>
-                                <input class="main__count__range" type="range">
+                                <div class="main__count__p__wrap">
+                                    <p class="main__count__p_black">Срок инвестирования</p>
+                                    <p class="main__count__p_bold">24 месяца</p>
+                                </div>
+                                <input class="main__count__range" type="range" value="85" min="5" max="120">
                             </div>
                             <div class="main__count__inner">
-                                <p class="main__count__p_black">Порядок выплаты дохода</p>
+                                <p class="main__count__p_black main__count_pb">Порядок выплаты дохода</p>
                                 <div class="main__count__radios">
-                                    <input class="main__count__radio" type="radio"  name="payment" value="month">
-                                    <label for="month">Ежемесячно</label>
-                                    <input class="main__count__radio" type="radio"  name="payment" value="end">
-                                    <label for="end">В конце срока</label>
+                                    <div class="main__count__radiowrap">
+                                        <input class="main__count__radio" type="radio"  name="payment" value="month">
+                                        <label class="main__count__label" for="month">Ежемесячно</label>
+                                    </div>
+                                    <div class="main__count__radiowrap">
+                                        <input class="main__count__radio" type="radio"  name="payment" value="end">
+                                        <label class="main__count__label" for="end">В конце срока</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="main__count__inner">
-                                <p class="main__count__p_black">Пополнение вклада</p>
-                                <input  class="main__count__range" type="range">
+                                <div class="main__count__p__wrap">
+                                    <p class="main__count__p_black">Пополнение вклада</p>
+                                    <p class="main__count__p_bold">30 000 ₽ /в месяц</p>
+                                </div>
+                                <input  class="main__count__range" type="range" value="85" min="5" max="120">
                             </div>
                         </div>
                         <div class="main__count__graph">
@@ -250,6 +263,14 @@
                                 <div class="main__count__line"></div>
                                 <div class="main__count__line"></div>
                                 <div class="main__count__line"></div>
+                            </div>
+                            <div class="main__count__points">
+                                <div class="main__count__point1 main__count__point"></div>
+                                <div class="main__count__point2 main__count__point"></div>
+                                <div class="main__count__point3 main__count__point"></div>
+                                <div class="main__count__point4 main__count__point"></div>
+                                <div class="main__count__point5 main__count__point"></div>
+                                <div class="main__count__point6 main__count__point"></div>
                             </div>
                             <img src="assets/images/graph.svg" alt="">
                         </div>
@@ -272,7 +293,7 @@
                     
                 </div>
                 <div class="main__benefits">
-                    <h1 class="main__h1">Ваши возможности с НурФинанс</h1>
+                    <h1 class="main__h1 main__benefits__h1">Ваши возможности с НурФинанс</h1>
                     <div class="main__benefits__wrap">
                         <div class="main__benefits_left">
                             <div class="main__benefits_left__wrap">
