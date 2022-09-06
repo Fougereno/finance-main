@@ -213,7 +213,7 @@
 }
 .main__benefits__wrap {
     @include flex(row, space-between, flex-start);
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     position: relative;
 }
 .main__benefits_left__wrap {
