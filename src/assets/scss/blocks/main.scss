@@ -52,7 +52,6 @@
     width: 100%;
 }
 .main__count__h1 {
-    padding-bottom: 32px;
     line-height: 110%;
     max-width: 405px;
 }
@@ -63,10 +62,10 @@
 }
 .main__count__p__wrap {
     @include flex(row, space-between, center);
+    padding-bottom: 6px;
 }
 .main__count__p_black {
     font-size: 16px;
-    padding-bottom: 6px;
 }
 .main__count__p_bold {
     font-size: 18px;
@@ -76,7 +75,7 @@
     padding-bottom: 15px;
 }
 .main__count__wrap {
-    @include flex(row, space-between, flex-end);
+    @include flex(row, space-between, flex-start);
     flex-wrap: wrap;
 }
 .main__count__graph {
@@ -128,6 +127,7 @@
 .main__count__eval {
     @include flex(column, space-between, flex-start);
     flex-basis: 460px;
+    padding-top: 31px;
 }
 .main__count__inner {    
     width: 100%;
@@ -209,20 +209,45 @@
 .main__benefits {
     max-width: 1245px;
     margin: 0 auto;
+    padding-bottom: 112px;
 }
 .main__benefits__wrap {
-    @include flex(row, space-between, center);
+    @include flex(row, space-between, flex-start);
     flex-wrap: wrap;
+    position: relative;
+}
+.main__benefits_left__wrap {
+    padding-bottom: 33px;
+}
+.main__benefits_left__item {
+    padding-bottom: 30px;   
+    @include flex(row, space-between, flex-start);
+}
+.main__benefits__img {
+    &::before {
+        content: url(/assets/images/lightblue.svg);
+        position: absolute;
+    }
+}
+.main__benefits__button {
+    min-height: 48px;
+    border-radius: 20px 0px;
+    padding: 14px 32px;
 }
 .main__benefits__h1 {
     padding-top: 109px;
+    padding-bottom: 48px;
+}
+.main__benefits__h2 {
+    font-size: 18px;
+    padding-bottom: 11px;
+}
+.main__benefits__padding {
+    padding-bottom: 15px;
 }
 .main__benefits_left {
     flex-basis: 358px;
     @include flex(column, space-between, flex-start);
-}
-.main__benefits_left__item {
-    @include flex(row, space-between, center);
 }
 .main__benefits_right {
     flex-basis: 841px;
@@ -230,19 +255,103 @@
 .main__benefits_right-top {
     @include flex(row, space-between, center);
     flex-wrap: wrap;
+    padding-bottom: 37px;
 }
 .main__benefits_right-bottom__columns {
     @include flex(row, space-between, center);
     flex-wrap: wrap;
 }
-.main__benefits__lines {
-    @include flex(column, space-between, flex-start);
+.main__benefits__graph {
+    position: relative;
     min-height: 118px;
+}
+.main__benefits__graphimg {
+    position: absolute
+}
+.main__benefits__lines {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    @include flex(column, space-between, flex-start);
+    min-height: 120px;
 }
 .main__benefits__line {
     background: linear-gradient(180deg, rgba(198, 217, 233, 0) 0%, $lightgreen 49.48%, rgba(198, 217, 233, 0) 100%);
     width: 100%;
     height: 1px;
+}
+.main__benefits__p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height:22.4px;
+    max-width: 267px;
+    padding-left: 25px;
+}
+.main__benefits__figures {
+    @include flex(row,space-between,flex-end);
+    position: relative;
+    z-index: 10
+}
+.main__benefits__figureitem {
+    @include flex(column,space-between,center);
+}
+.main__benefits__figurep {
+    font-size: 14px;
+    line-height: 110%;
+    max-width: 95px;
+    padding-bottom: 3px; 
+}
+.main__benefits__figurespan {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 110%;
+    color: $gray;
+}
+.main__benefits__p_colored {
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 8px;
+    color: $gray;
+    &::before {
+        content: url(/assets/images/check.svg)
+    }
+}
+.main__benefits_blue {
+    color: $brightblue;
+}
+.main__benefits__figure_blue {
+    left: 146px;
+    bottom: 0;
+    width: 95px;
+    height: 105px;
+    background: $brightblue;
+    border-radius: 18px 0px;
+}
+.main__benefits__figure_gray {
+    width: 95px;
+    height: 33px;
+    background: $lightgray;
+    border-radius: 18px 0px;
+    bottom: 0;
+    &:last-child {
+        height: 46px;
+        left: 292px;
+    }
+}
+.main__benefits__subwrap {
+    @include flex(row,space-between,center);
+    padding-top: 20px;
+}
+.main__benefits__subscript {
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 114px;
+}
+.main__benefits__h3 {
+    line-height: 19px;
+    padding-bottom: 5px;
+    padding-top: 12px;
 }
 .main__p_bold {
     font-weight: 700;

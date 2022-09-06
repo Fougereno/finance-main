@@ -994,7 +994,6 @@ a {
 }
 
 .main__count__h1 {
-  padding-bottom: 32px;
   line-height: 110%;
   max-width: 405px;
 }
@@ -1010,11 +1009,11 @@ a {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  padding-bottom: 6px;
 }
 
 .main__count__p_black {
   font-size: 16px;
-  padding-bottom: 6px;
 }
 
 .main__count__p_bold {
@@ -1029,7 +1028,7 @@ a {
 .main__count__wrap {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -1099,6 +1098,7 @@ a {
   align-items: flex-start;
   flex-direction: column;
   flex-basis: 460px;
+  padding-top: 31px;
 }
 
 .main__count__inner {
@@ -1197,18 +1197,53 @@ a {
 .main__benefits {
   max-width: 1245px;
   margin: 0 auto;
+  padding-bottom: 112px;
 }
 
 .main__benefits__wrap {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
+}
+
+.main__benefits_left__wrap {
+  padding-bottom: 33px;
+}
+
+.main__benefits_left__item {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.main__benefits__img::before {
+  content: url(/assets/images/lightblue.svg);
+  position: absolute;
+}
+
+.main__benefits__button {
+  min-height: 48px;
+  border-radius: 20px 0px;
+  padding: 14px 32px;
 }
 
 .main__benefits__h1 {
   padding-top: 109px;
+  padding-bottom: 48px;
+}
+
+.main__benefits__h2 {
+  font-size: 18px;
+  padding-bottom: 11px;
+}
+
+.main__benefits__padding {
+  padding-bottom: 15px;
 }
 
 .main__benefits_left {
@@ -1217,13 +1252,6 @@ a {
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
-}
-
-.main__benefits_left__item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
 }
 
 .main__benefits_right {
@@ -1236,6 +1264,7 @@ a {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-bottom: 37px;
 }
 
 .main__benefits_right-bottom__columns {
@@ -1246,18 +1275,124 @@ a {
   flex-wrap: wrap;
 }
 
+.main__benefits__graph {
+  position: relative;
+  min-height: 118px;
+}
+
+.main__benefits__graphimg {
+  position: absolute;
+}
+
 .main__benefits__lines {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
-  min-height: 118px;
+  min-height: 120px;
 }
 
 .main__benefits__line {
   background: linear-gradient(180deg, rgba(198, 217, 233, 0) 0%, #C6D9E9 49.48%, rgba(198, 217, 233, 0) 100%);
   width: 100%;
   height: 1px;
+}
+
+.main__benefits__p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22.4px;
+  max-width: 267px;
+  padding-left: 25px;
+}
+
+.main__benefits__figures {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+  position: relative;
+  z-index: 10;
+}
+
+.main__benefits__figureitem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main__benefits__figurep {
+  font-size: 14px;
+  line-height: 110%;
+  max-width: 95px;
+  padding-bottom: 3px;
+}
+
+.main__benefits__figurespan {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 110%;
+  color: #7C83A1;
+}
+
+.main__benefits__p_colored {
+  font-size: 16px;
+  line-height: 19px;
+  padding-bottom: 8px;
+  color: #7C83A1;
+}
+.main__benefits__p_colored::before {
+  content: url(/assets/images/check.svg);
+}
+
+.main__benefits_blue {
+  color: #355DFB;
+}
+
+.main__benefits__figure_blue {
+  left: 146px;
+  bottom: 0;
+  width: 95px;
+  height: 105px;
+  background: #355DFB;
+  border-radius: 18px 0px;
+}
+
+.main__benefits__figure_gray {
+  width: 95px;
+  height: 33px;
+  background: #C9CEE1;
+  border-radius: 18px 0px;
+  bottom: 0;
+}
+.main__benefits__figure_gray:last-child {
+  height: 46px;
+  left: 292px;
+}
+
+.main__benefits__subwrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 20px;
+}
+
+.main__benefits__subscript {
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 114px;
+}
+
+.main__benefits__h3 {
+  line-height: 19px;
+  padding-bottom: 5px;
+  padding-top: 12px;
 }
 
 .main__p_bold {
