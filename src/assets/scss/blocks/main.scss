@@ -216,17 +216,17 @@
     flex-wrap: wrap; 
     position: relative;
 }
-.main__benefits_left__wrap {
-    padding-bottom: 33px;
-}
 .main__benefits_left__item {
     padding-bottom: 30px;   
     @include flex(row, space-between, flex-start);
 }
 .main__benefits__img {
+    position: relative;
     &::before {
         content: url(/assets/images/lightblue.svg);
         position: absolute;
+        left: -5px;
+        top: 0;
     }
 }
 .main__benefits__button {
@@ -241,9 +241,7 @@
 .main__benefits__h2 {
     font-size: 18px;
     padding-bottom: 11px;
-}
-.main__benefits__padding {
-    padding-bottom: 15px;
+    line-height: 120%;
 }
 .main__benefits_left {
     flex-basis: 358px;
@@ -263,10 +261,19 @@
 }
 .main__benefits__graph {
     position: relative;
-    min-height: 118px;
+    min-height: 178px;
+    @include flex(row,center,flex-end);
 }
 .main__benefits__graphimg {
-    position: absolute
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: -25px;
+}
+.main__benefits__graphimg2 {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
 }
 .main__benefits__lines {
     position: absolute;
@@ -291,34 +298,53 @@
 .main__benefits__figures {
     @include flex(row,space-between,flex-end);
     position: relative;
-    z-index: 10
+    z-index: 10;
+    width: 100%;
+    min-height: 164px
 }
 .main__benefits__figureitem {
-    @include flex(column,space-between,center);
+    @include flex(column,space-between,flex-start);
 }
 .main__benefits__figurep {
     font-size: 14px;
     line-height: 110%;
     max-width: 95px;
-    padding-bottom: 3px; 
+    padding-bottom: 6px; 
 }
-.main__benefits__figurespan {
+.main__benefits__figurep_gray {
+    color: $gray;
+}
+.main__benefits__figurebold {
     font-weight: 700;
     font-size: 20px;
     line-height: 110%;
     color: $gray;
+    padding-bottom: 3px;
+}
+.main__benefits__figurespan {
+    font-size: 28px;
+}
+.main__benefits__checkwrap {
+    @include flex(row,flex-start,center);
+    padding-bottom: 8px;
 }
 .main__benefits__p_colored {
     font-size: 16px;
     line-height: 19px;
-    padding-bottom: 8px;
     color: $gray;
-    &::before {
-        content: url(/assets/images/check.svg)
-    }
+}
+.main__benefits__check {
+    padding-right: 10px;
 }
 .main__benefits_blue {
     color: $brightblue;
+}
+.main__benefits__figure {
+    width: 95px;
+    height: 33px;
+    background: $lightgray;
+    border-radius: 18px 0px;
+    bottom: 0;
 }
 .main__benefits__figure_blue {
     left: 146px;
@@ -329,24 +355,36 @@
     border-radius: 18px 0px;
 }
 .main__benefits__figure_gray {
-    width: 95px;
-    height: 33px;
-    background: $lightgray;
-    border-radius: 18px 0px;
-    bottom: 0;
-    &:last-child {
-        height: 46px;
-        left: 292px;
-    }
+    height: 46px;
 }
 .main__benefits__subwrap {
     @include flex(row,space-between,center);
     padding-top: 20px;
+    line-height: 120%;
+}
+.main__benefits__subwrap_left {
+    @include flex(row,flex-start,center);
+}
+.main__benefits__subinner {
+    @include flex(row,space-between,center);
+}
+.main__benefits__circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: $gray;
+}
+.main__benefits__circle_blue {
+    background-color: $blue;
 }
 .main__benefits__subscript {
     font-size: 14px;
     font-weight: 400;
     max-width: 114px;
+    line-height: 17px;
+}
+.main__benefits__subscript__p {
+    padding-left: 10px;
 }
 .main__benefits__h3 {
     line-height: 19px;
