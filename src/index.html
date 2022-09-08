@@ -29,7 +29,7 @@ title:  Finance-main
                             <button class="button button_white button_small card__button">Подробнее</button>
                         </div>
                     </div>
-                    <img src="assets/images/img.png" alt="">
+                    <img class="card__img_mobile" src="assets/images/img.png" alt="">
                 </div>
             </div>
             <div class="card card_small">
@@ -105,7 +105,7 @@ title:  Finance-main
                             <button class="button button_white card__button">Подробнее</button>
                         </div>
                     </div>
-                    <img class="card__img_right" src="assets/images/img4.png" alt="">
+                    <img class="card__img_right card__img_mobile" src="assets/images/img4.png" alt="">
                 </div>
             </div>
         </div>
@@ -147,13 +147,17 @@ title:  Finance-main
                 <div class="main__count__inner">
                     <p class="main__count__p_black main__count_pb">Порядок выплаты дохода</p>
                     <div class="main__count__radios">
-                        <div class="main__count__radiowrap">
-                            <input class="main__count__radio" type="radio"  name="payment" value="month">
-                            <label class="main__count__label" for="month">Ежемесячно</label>
+                        <div class="main__count__radio__padding">
+                            <div class="main__count__radiowrap">
+                                <input class="main__count__radio" type="radio"  name="payment" value="month">
+                                <label class="main__count__label" for="month">Ежемесячно</label>
+                            </div>
                         </div>
-                        <div class="main__count__radiowrap">
-                            <input class="main__count__radio" type="radio"  name="payment" value="end">
-                            <label class="main__count__label" for="end">В конце срока</label>
+                        <div class="main__count__radio__padding">
+                            <div class="main__count__radiowrap">
+                                <input class="main__count__radio" type="radio"  name="payment" value="end">
+                                <label class="main__count__label" for="end">В конце срока</label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -276,10 +280,10 @@ title:  Finance-main
                         <h2 class="main__benefits__h2">Инвестируйте со стабильным результатом</h2>
                         <div class="main__benefits__graph">
                             <div class="main__benefits__graphimg">
-                                <img src="assets/images/linear-graph.svg" alt="">
+                                <img class="main__benefits__graphimg__inner" src="assets/images/linear-graph.svg" alt="">
                             </div>
                             <div class="main__benefits__graphimg2">
-                                <img src="assets/images/circles-graph.svg" alt="">
+                                <img class="main__benefits__graphimg__inner" src="assets/images/circles-graph.svg" alt="">
                             </div>
                             <div class="main__benefits__lines">
                                 <div class="main__benefits__line"></div>
@@ -374,6 +378,7 @@ title:  Finance-main
             <div class="main__info__itemwrap">
                 <div class="main__info__item">
                     <img class="main__info__bgimg" src="/assets/images/info2.svg" alt="">
+                    <img class="main__info__bgimg main__info__mobileimg" src="/assets/images/line.svg" alt="">
                     <p class="main__info_green">Ответы</p>
                     <p class="main__info_bold">Часто задаваемые <br> вопросы</p>
                     <div class="main__info__inner">
@@ -395,6 +400,7 @@ title:  Finance-main
             <div class="main__info__itemwrap">
                 <div class="main__info__item">
                     <img class="main__info__bgimg" src="/assets/images/info3.svg" alt="">
+                    <img class="main__info__bgimg main__info__mobileimg" src="/assets/images/line.svg" alt="">
                     <p class="main__info_green">Халяль</p>
                     <p class="main__info_bold">Отличие исламских инвестиций от неисламских</p>
                     <div class="main__info__inner">
@@ -416,6 +422,7 @@ title:  Finance-main
             <div class="main__info__itemwrap">
                 <div class="main__info__item">
                     <img class="main__info__bgimg" src="/assets/images/info.svg" alt="">
+                    <img class="main__info__bgimg main__info__mobileimg" src="/assets/images/line.svg" alt="">
                     <p class="main__info_green">Полезное</p>
                     <p class="main__info_bold">Школа <br> инвестора</p>
                     <div class="main__info__inner">

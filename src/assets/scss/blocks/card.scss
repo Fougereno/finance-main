@@ -78,3 +78,39 @@
     max-width: 207px;
     font-size: 14px;
 }
+@media screen and (max-width:847px) {
+    .card__img_mobile {
+        position: absolute;
+        right: -28%;
+        z-index: 0;
+        transform: rotate(-7.37deg);
+    }
+    .card__wrap {
+        position: relative;
+        z-index: 1;
+    }
+    .card__inner {
+        overflow: hidden;
+    }
+}
+@media screen and (max-width:647px) {
+    .card {
+        width: 100%;
+    }
+    .card__wrap {
+        min-height: 300px;
+    }
+    .card__p {
+        max-width: 202px;
+        font-size: 12px;
+    }
+    .card__p_black {
+        font-size: 12px;
+    }
+    .card__h1 {
+        font-size: 20px;
+    }
+    .card__h2 {
+        font-size: 24px;
+    }
+}
