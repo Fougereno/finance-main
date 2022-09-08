@@ -5,7 +5,6 @@
 }
 .footer__main {
     @include flex(row, space-between, center);
-    padding-bottom: 62px;
     flex-wrap: wrap;
 }
 .footer__wrap {
@@ -19,10 +18,15 @@
 .footer__main_right {
     flex-basis: 891px;
 }
+.footer__img {
+    padding-bottom: 77px;
+    width: 156px;
+}
 .footer__h1 {
     font-size: 37px;
     font-weight: 700;
     color: $blue;
+    padding-bottom: 8px;
 }
 .footer__h2 {
     color: $blue;
@@ -33,18 +37,35 @@
     font-size: 14px;
     color: $black;
     padding-bottom: 20px;
+    line-height: 110%;
+}
+.footer__p {
+    color: $green;
+    font-size: 12px;
+    line-height: 110%;
+}
+.footer__city {
+    color: $blue;
+    font-size: 18px;
+    padding-bottom: 7px;
+}
+.footer_left__item {
+    padding-bottom: 45px;
 }
 .footer__nav {
     @include flex(row, space-between, center);
     max-width: 847px;
     padding-top: 73px;
+    padding-bottom: 62px;
     flex-wrap: wrap;
 }
 .footer__navitem {
     @include flex(column, center, flex-start);
+    min-height: 241px;
 }
 .footer__social {
     @include flex(row, space-between, center);
+    padding-bottom: 69px;
 }
 .footer__social__wrap {
     padding: 5px;
@@ -65,13 +86,25 @@
     }
 }
 .footer__search {
+    position: relative;
+    display: inline-block;
     border-radius: 6px;
     border: 0;
     background-color: $white;
-    min-height: 48px;
     width: 100%;
-    padding: 15px;
     font-size: 14px;
+}
+.footer__searchitem {
+    border: 0;
+    width: 100%;
+    min-height: 48px;
+    padding: 15px;
+    padding-left: 57px;
+}
+.footer__searchimg {
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 .footer__green-header {
     color: $green;
@@ -83,4 +116,14 @@
     font-size: 12px;
     color: $green;
     padding-bottom: 60px;
+    line-height: 110%;
+}
+.footer__comments {
+    @include flex(row,flex-start,center);
+    padding-bottom: 16px;
+    color: $green;
+    font-size: 12px;
+}
+.footer__comments-item {
+    padding-right: 21px;
 }
