@@ -16,7 +16,7 @@
     <title>Finance-main</title>
 </head>
 <body class="show-sidebar">
-    <div class="page">
+    <div class="app">
             <header class="header">
                 <div class="header__wrap">
                     <div class="header__bg">
@@ -205,14 +205,16 @@
                     <div class="main__count_blue">
                         <div class="main__count_blue__inner">
                             <div class="main__count_blue__item">
-                                <img src="assets/images/img-blue.svg" alt="">
-                                <p class="main__count__p_white">Инвестиционные вклады НурФинанс</p>
+                                <img class="main__count_blue__img" src="assets/images/img-blue.svg" alt="">
+                                <p class="main__count__p_white main__count__p_laptop">Инвестиционные вклады НурФинанс</p>
+                                <p class="main__count__p_white main__count__p_mobile">Опыт команды в сфере партнерских финансов более 10 лет</p>
                             </div>
                         </div>
                         <div class="main__count_blue__inner">
                             <div class="main__count_blue__item">
-                                <img src="assets/images/img-blue2.svg" alt="">
-                                <p class="main__count__p_white">Потребительская рассрочка НурФинанс</p>
+                                <img class="main__count_blue__img" src="assets/images/img-blue2.svg" alt="">
+                                <p class="main__count__p_white main__count__p_laptop">Потребительская рассрочка НурФинанс</p>
+                                <p class="main__count__p_white main__count__p_mobile">Соответствие деятельности компании высоким этическим и правовым стандартам</p>
                             </div>
                         </div>
                     </div>
@@ -460,60 +462,66 @@
                 <div class="main__info">
                     <h1 class="main__h1">Полезная информация</h1>
                     <div class="main__info__items">
-                        <div class="main__info__item">
-                            <img class="main__info__bgimg" src="/assets/images/info2.svg" alt="">
-                            <p class="main__info_green">Ответы</p>
-                            <p class="main__info_bold">Часто задаваемые <br> вопросы</p>
-                            <div class="main__info__inner">
-                                <div class="main__info__inneritem">
-                                    <img class="main__info__img" src="assets/images/blue-arrow.svg" alt="">
-                                    <p class="main__info__p">Что такое инвестиции? Зачем нужно инвестировать?</p>
-                                </div>
-                                <div class="main__info__inneritem">
-                                    <img class="main__info__img" src="assets/images/blue-arrow.svg" alt="">
-                                    <p class="main__info__p">Какие стратегии инвестирования существуют и какую лучше выбрать?</p>
-                                </div>
-                                <div class="main__info__inneritem">
-                                    <img class="main__info__img" src="assets/images/blue-arrow.svg" alt="">
-                                    <p class="main__info__p">Как защищены мои инвестиции? Что будет, если компания обанкротится?</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="main__info__item">
-                            <img class="main__info__bgimg" src="/assets/images/info3.svg" alt="">
-                            <p class="main__info_green">Халяль</p>
-                            <p class="main__info_bold">Отличие исламских инвестиций от неисламских</p>
-                            <div class="main__info__inner">
-                                <div class="main__info__inneritem">
-                                    <img class="main__info__img" src="assets/images/blue-arrow.svg" alt="">
-                                    <p class="main__info__p">Термин «Риба» - что такое ростовщические операциии?</p>
-                                </div>
-                                <div class="main__info__inneritem">
-                                    <img class="main__info__img" src="assets/images/blue-arrow.svg" alt="">
-                                    <p class="main__info__p">Как проверяют компании на соответствие нормам халяль.?</p>
-                                </div>
-                                <div class="main__info__inneritem">
-                                    <img class="main__info__img" src="assets/images/blue-arrow.svg" alt="">
-                                    <p class="main__info__p">Термин «Сукук» - эквивалент исламских облигаций</p>
+                        <div class="main__info__itemwrap">
+                            <div class="main__info__item">
+                                <img class="main__info__bgimg" src="/assets/images/info2.svg" alt="">
+                                <p class="main__info_green">Ответы</p>
+                                <p class="main__info_bold">Часто задаваемые <br> вопросы</p>
+                                <div class="main__info__inner">
+                                    <div class="main__info__inneritem">
+                                        <img class="main__info__img" src="assets/images/blue-arrow.svg" alt="">
+                                        <p class="main__info__p">Что такое инвестиции? Зачем нужно инвестировать?</p>
+                                    </div>
+                                    <div class="main__info__inneritem">
+                                        <img class="main__info__img" src="assets/images/blue-arrow.svg" alt="">
+                                        <p class="main__info__p">Какие стратегии инвестирования существуют и какую лучше выбрать?</p>
+                                    </div>
+                                    <div class="main__info__inneritem">
+                                        <img class="main__info__img" src="assets/images/blue-arrow.svg" alt="">
+                                        <p class="main__info__p">Как защищены мои инвестиции? Что будет, если компания обанкротится?</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="main__info__item">
-                            <img class="main__info__bgimg" src="/assets/images/info.svg" alt="">
-                            <p class="main__info_green">Полезное</p>
-                            <p class="main__info_bold">Школа <br> инвестора</p>
-                            <div class="main__info__inner">
-                                <div class="main__info__inneritem">
-                                    <img class="main__info__img" src="assets/images/blue-arrow.svg" alt="">
-                                    <p class="main__info__p">7 финансовых советов на 2021 год. Что делать, чтобы накопить на цель?</p>
+                        <div class="main__info__itemwrap">
+                            <div class="main__info__item">
+                                <img class="main__info__bgimg" src="/assets/images/info3.svg" alt="">
+                                <p class="main__info_green">Халяль</p>
+                                <p class="main__info_bold">Отличие исламских инвестиций от неисламских</p>
+                                <div class="main__info__inner">
+                                    <div class="main__info__inneritem">
+                                        <img class="main__info__img" src="assets/images/blue-arrow.svg" alt="">
+                                        <p class="main__info__p">Термин «Риба» - что такое ростовщические операциии?</p>
+                                    </div>
+                                    <div class="main__info__inneritem">
+                                        <img class="main__info__img" src="assets/images/blue-arrow.svg" alt="">
+                                        <p class="main__info__p">Как проверяют компании на соответствие нормам халяль.?</p>
+                                    </div>
+                                    <div class="main__info__inneritem">
+                                        <img class="main__info__img" src="assets/images/blue-arrow.svg" alt="">
+                                        <p class="main__info__p">Термин «Сукук» - эквивалент исламских облигаций</p>
+                                    </div>
                                 </div>
-                                <div class="main__info__inneritem">
-                                    <img class="main__info__img" src="assets/images/blue-arrow.svg" alt="">
-                                    <p class="main__info__p">Какие книги надо прочитать инвестору-новичку: топ-5 книг</p>
-                                </div>
-                                <div class="main__info__inneritem">
-                                    <img class="main__info__img" src="assets/images/blue-arrow.svg" alt="">
-                                    <p class="main__info__p">Сколько нужно денег, чтобы начать инвестировать</p>
+                            </div>
+                        </div>
+                        <div class="main__info__itemwrap">
+                            <div class="main__info__item">
+                                <img class="main__info__bgimg" src="/assets/images/info.svg" alt="">
+                                <p class="main__info_green">Полезное</p>
+                                <p class="main__info_bold">Школа <br> инвестора</p>
+                                <div class="main__info__inner">
+                                    <div class="main__info__inneritem">
+                                        <img class="main__info__img" src="assets/images/blue-arrow.svg" alt="">
+                                        <p class="main__info__p">7 финансовых советов на 2021 год. Что делать, чтобы накопить на цель?</p>
+                                    </div>
+                                    <div class="main__info__inneritem">
+                                        <img class="main__info__img" src="assets/images/blue-arrow.svg" alt="">
+                                        <p class="main__info__p">Какие книги надо прочитать инвестору-новичку: топ-5 книг</p>
+                                    </div>
+                                    <div class="main__info__inneritem">
+                                        <img class="main__info__img" src="assets/images/blue-arrow.svg" alt="">
+                                        <p class="main__info__p">Сколько нужно денег, чтобы начать инвестировать</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -571,37 +579,53 @@
                             </div>
                             <div class="footer__nav">
                                 <div class="footer__navitem">
-                                    <h2 class="footer__h2">Инвестиции</h2>
+                                    <div class="footer__menu">
+                                        <h2 class="footer__h2">Инвестиции</h2>
+                                        <img class="footer__menuimg" src="/assets/images/footer-line.svg" alt="">
+                                    </div>
                                     <a href="" class="footer__a">Вклад Накопительный</a>
                                     <a href="" class="footer__a">Вклад Активный</a>
                                     <a href="" class="footer__a">Вклад Комфорт</a>
                                     <a href="" class="footer__a">Калькулятор</a>
                                     <a href="" class="footer__a">Отзывы по инвестициям</a>
                                 </div>
-                                <div class="footer__navitem">
-                                    <h2 class="footer__h2">Рассрочка</h2>
+                                <div class="footer__line"></div>
+                                <div class="footer__navitem footer__visible">
+                                    <div class="footer__menu">
+                                        <h2 class="footer__h2 ">Рассрочка</h2>
+                                        <img class="footer__menuimg" src="/assets/images/footer-line.svg" alt="">
+                                    </div>
                                     <a href="" class="footer__a">АвтоРассрочка</a>
                                     <a href="" class="footer__a">Долевое финансирование</a>
                                     <a href="" class="footer__a">Долговое финансирование</a>
                                     <a href="" class="footer__a">Калькулятор</a>
                                     <a href="" class="footer__a">Отзывы по займам</a>
                                 </div>
+                                <div class="footer__line"></div>
                                 <div class="footer__navitem">
-                                    <h2 class="footer__h2">Компания</h2>
+                                    <div class="footer__menu">
+                                        <h2 class="footer__h2">Компания</h2>
+                                        <img class="footer__menuimg" src="/assets/images/footer-line.svg" alt="">
+                                    </div>
                                     <a href="" class="footer__a">О компании</a>
                                     <a href="" class="footer__a">Новости</a>
                                     <a href="" class="footer__a">Отчетность</a>
                                     <a href="" class="footer__a">Сотрудничество</a>
                                     <a href="" class="footer__a">Реквизиты</a>
                                 </div>
+                                <div class="footer__line"></div>
                                 <div class="footer__navitem">
-                                    <h2 class="footer__h2">Информация</h2>
+                                    <div class="footer__menu">
+                                        <h2 class="footer__h2">Информация</h2>
+                                        <img class="footer__menuimg" src="/assets/images/footer-line.svg" alt="">
+                                    </div>
                                     <a href="" class="footer__a">Халяль подробно</a>
                                     <a href="" class="footer__a">Наши партнеры</a>
                                     <a href="" class="footer__a">Частые вопросы</a>
                                     <a href="" class="footer__a">Личный кабинет</a>
                                     <a href="" class="footer__a">Контакты</a>
                                 </div>
+                                <div class="footer__line"></div>
                             </div>
                         </div>
                     </div>

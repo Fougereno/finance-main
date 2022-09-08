@@ -60,6 +60,9 @@
     font-size: 27px;
     color: $white;
 }
+.main__count__p_mobile {
+    display: none;
+}
 .main__count__p__wrap {
     @include flex(row, space-between, center);
     padding-bottom: 6px;
@@ -482,7 +485,7 @@
     padding: 14px 111px;
 }
 .main__info {
-    padding-bottom: 100px;
+    padding-bottom: 86px;
     max-width: 1245px;
     margin: 0 auto;
 }
@@ -490,10 +493,13 @@
     @include flex(row, space-between, flex-start);
     flex-wrap: wrap;
 }
-.main__info__item {
-    position: relative;
+.main__info__itemwrap {
+    padding-bottom: 14px;
     flex-basis: 405px;
     min-height: 360px;
+}
+.main__info__item {
+    position: relative;
     border-radius: 10px;
     background-color: $lightblue;
     padding: 26px 28px 36px 30px;
@@ -533,9 +539,6 @@
     }
 }
 @media screen and (max-width: 1365px) {
-    .main__wrap {
-        padding: 0 15px;
-    }
     .main__products {
         padding-bottom: 20%;
     }
@@ -546,6 +549,9 @@
     }
     .main__count_blue__inner {
         flex-grow: 1;
+        padding-right: 25px;
+        padding-left: 25px;
+        font-size: 16px;
     }
     .main__count_blue__item {
         @include flex(row, center,center);
@@ -554,16 +560,45 @@
     .main__feedback__items {
         overflow: scroll;
     }
+    .main__feedback__items::-webkit-scrollbar {
+        display: none;
+      }
     .main__count__graph {
         display: none;
     }
     .main__count__eval {
         max-width: max-content;
     }
+    .main__benefits {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    .main__benefits_left {
+        order: 1;
+        &:last-child {
+            order: 2;
+        }
+        &:first-child {
+            order: 0;
+        }
+    }
 }
 @media screen and (max-width:1273px) {
     .card_small {
         flex-basis: 419px;
+    }
+    .main__info__items {
+        @include flex(column,center,stretch);
+    }
+    .main__info__itemwrap {
+        flex-basis: unset;
+        min-height: unset;
+    }
+    .main__info__item {
+        width: 100%;
+    }
+    .main__info__inneritem {
+        display: none;
     }
 }
 @media screen and (max-width:1068px) {
@@ -575,5 +610,23 @@
     .card_small {
         flex-basis: auto;
         flex-grow: 1;
+    }
+    .main__count__wrap {
+        align-items: stretch;
+    }
+    .main__count__eval {
+        max-width: unset;
+    }
+    .main__count__radiowrap {
+        min-width: 165px;
+    }
+    .main__count_blue__img {
+        max-width: 50px;
+    }
+    .main__count__p_laptop {
+        display: none;
+    }
+    .main__count__p_mobile {
+        display: block;
     }
 }

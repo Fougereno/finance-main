@@ -6,6 +6,7 @@
 .footer__main {
     @include flex(row, space-between, center);
     flex-wrap: wrap;
+    padding-top: 87px;
 }
 .footer__wrap {
     max-width: 1245px;
@@ -31,7 +32,6 @@
 .footer__h2 {
     color: $blue;
     font-size: 18px;
-    padding-bottom: 34px;
 }
 .footer__a {
     font-size: 14px;
@@ -126,4 +126,53 @@
 }
 .footer__comments-item {
     padding-right: 21px;
+}
+.footer__menuimg {
+    display: none;
+}
+.footer__menu {
+    @include flex(row,space-between,center);
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 22px;
+}
+.footer__line {
+    display: none;
+    width: 100%;
+    height: 1px;
+    background: $lightgreen;
+}
+@media screen and (max-width: 1294px) {
+    .footer {
+        padding: 0 26px;
+    }
+}
+@media screen and (max-width: 490px) {
+    .footer__nav {
+        @include flex(column,flex-start,flex-start);
+    }
+    .footer__navitem {
+        width: 100%;
+    }
+    .footer__menuimg {
+        display: block;
+    }
+    .footer__line {
+        display: block;
+    }
+    .footer__visible {
+        color: $black;
+        .footer__h2 {
+            color: $black;
+        }
+        .footer__a {
+            display: block;
+        }
+    }
+    .footer__navitem {
+        min-height: auto;
+    }
+    .footer__a {
+        display: none;
+    }
 }

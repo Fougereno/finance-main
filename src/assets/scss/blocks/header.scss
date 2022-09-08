@@ -61,20 +61,23 @@
     position: relative;
 }
 .header__img__item {
+    width: 100%;
     position: absolute;
     left: 50px;
     top: -10px;
     z-index: 1
 }
 .header__img__item_last {
+    width: 100%;
     position: absolute;
     left: 30px;
     top: 18px;
     z-index: 10
 }
 .header__img__item_first {
+    width: 100%;
     position: relative;
-    z-index: 100
+    z-index: 100;
 }
 .header__buttons {
     @include flex(row, space-between, center);    
@@ -148,6 +151,12 @@
     }
     .button_hidden {
         display: none;
+    }
+    .header__arrows {
+        display: none;
+    }
+    .header__img {
+        max-width: 75%;
     }
 }
 @media screen and(max-width: 992px) {
