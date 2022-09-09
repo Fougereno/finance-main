@@ -218,13 +218,19 @@
     padding-bottom: 112px;
 }
 .main__benefits__wrap {
-    @include flex(row, space-between, flex-start);
+    @include flex(column, space-between, flex-start);
     flex-wrap: wrap; 
     position: relative;
+}
+.main__benefits_left__wrap {
+    flex-basis: 358px;
 }
 .main__benefits_left__item {
     padding-bottom: 30px;   
     @include flex(row, space-between, flex-start);
+}
+.main__benefits_left__item:last-child {
+    padding-bottom: 55px;
 }
 .main__benefits__img {
     position: relative;
@@ -249,17 +255,29 @@
     padding-bottom: 11px;
     line-height: 120%;
 }
-.main__benefits_left {
+.main__benefits_top {
+    width: 100%;
     flex-basis: 358px;
-    @include flex(column, space-between, flex-start);
+    flex-wrap: wrap;
+    @include flex(row, space-between, flex-start);
 }
-.main__benefits_right {
-    flex-basis: 841px;
+.main__benefits_bottom {
+    width: 100%;
+    @include flex(row, space-between, flex-start);
 }
 .main__benefits_right-top {
     @include flex(row, space-between, center);
     flex-wrap: wrap;
-    padding-bottom: 37px;
+    padding-bottom: 100px;
+    flex-basis: 841px;
+}
+.main__benefits_right-bottom {
+    margin-top: -72px;
+    flex-basis: 841px;
+}
+.main__benefits_right-bottom__column {
+    padding-bottom: 16px;
+    padding-right: 50px;
 }
 .main__benefits_right-bottom__columns {
     @include flex(row, space-between, center);
@@ -546,13 +564,19 @@
     .main__feedback__arrow {
         display: none;
     }
-    .main__feedback__wrap {
-        background: $white;
+    .main__feedbaack__wrap {
+        background-color: $white;
+    }
+    .main__feedback__button {
+        background-color: $lightblue;
     }
 }
 @media screen and (max-width: 1365px) {
     .main__products {
         padding: 45px 25px 20% 25px;
+    }
+    .card_small {
+        flex-basis: 420px;
     }
     .main__count_blue {
         top: -26%;
@@ -585,15 +609,6 @@
         padding-right: 25px;
         padding-left: 25px;
     }
-    .main__benefits_left {
-        order: 1;
-        &:last-child {
-            order: 2;
-        }
-        &:first-child {
-            order: 0;
-        }
-    }
     .main__count__radiowrap {
         min-height: 36px;
         max-width: 165px;
@@ -602,6 +617,9 @@
     .main__count__radio {
         height: 14px;
         width: 14px;
+    }
+    .main__benefits_right-top__column:first-child {
+        order: 2;
     }
 }
 @media screen and (max-width:1273px) {
@@ -645,16 +663,34 @@
         }
     }
 }
+@media screen and (max-width:1173px) {
+    .main__benefits__h1 {
+        max-width: 371px;
+        margin: 0 auto;
+    }
+    .main__benefits_top {
+        @include flex(column, space-between,center);
+        padding-bottom: 50px;
+    } 
+    .main__benefits_bottom {
+        @include flex(column, space-between,center);
+        flex-wrap: wrap;
+    }
+    .main__benefits_right-bottom {
+        margin-top: 0;
+        padding-top: 25px;
+        flex-basis: 0;
+    }
+    .main__benefits_right-bottom__columns {
+        @include flex(column, space-between,center);
+    }
+}
 @media screen and (max-width:1068px) {
     .main__count__wrap {
         @include flex(column, center,stretch);
     }
 }
 @media screen and (max-width:867px) {
-    .card_small {
-        flex-basis: auto;
-        flex-grow: 1;
-    }
     .main__count__wrap {
         align-items: stretch;
     }
@@ -680,5 +716,37 @@
     }
     .main__count__radio__padding {
         padding-right: 8px;
+    }
+}
+@media screen and (max-width:541px) {
+    .main__count {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    .main__count__p_bold {
+        font-size: 16px;
+    }
+    .main__count__p_black {
+        font-size: 14px;
+    }
+    .main__count__card {
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-height: auto;
+    }
+    .main__feedback__button {
+        padding: 14px 23%;
+    }
+    .main__feedbaack__wrap {
+        padding-left: 25px;
+        padding-right: 0;
+    }
+    .main__feedback__btnwrap {
+        padding-right: 25px;
+    }
+}
+@media screen and(max-width: 340px) {
+    .main__count__radios {
+        flex-wrap: wrap;
     }
 }

@@ -97,6 +97,13 @@
         <main class="main">
             <div class="container">
             <div class="main__wrap">
+                <div class="main__points">
+                    <div class="main__point"></div>
+                    <div class="main__point"></div>
+                    <div class="main__point main__point_active"></div>
+                    <div class="main__point"></div>
+                    <div class="main__point"></div>
+                </div>
                 <div class="main__products">
                     <h1 class="main__h1 main__products__h1">Рекомендуемые продукты</h1>
                     <div class="main__products__cards">
@@ -123,7 +130,7 @@
                                         <button class="button button_white button_small card__button">Подробнее</button>
                                     </div>
                                 </div>
-                                <img class="card__img_mobile" src="assets/images/img.png" alt="">
+                                <img class="card__img_mobile card__img_rotate" src="assets/images/img.png" alt="">
                             </div>
                         </div>
                         <div class="card card_small">
@@ -304,8 +311,8 @@
                 <div class="main__benefits">
                     <h1 class="main__h1 main__benefits__h1">Ваши возможности с НурФинанс</h1>
                     <div class="main__benefits__wrap">
-                        <div class="main__benefits_left">
-                            <div class="main__benefits_left__wrap">
+                        <div class="main__benefits_top">
+                            <div class=" main__benefits_right-top__column">
                                 <div class="main__benefits_left__item">
                                     <div class="main__benefits__img">
                                         <img src="assets/images/lefticon.svg" alt="">
@@ -331,75 +338,73 @@
                                     <p class="main__benefits__p">Обеспечьте вложения надежными активами</p>
                                 </div>
                             </div>
-                            <a href="" class="button button_small main__benefits__button">Инвестиционные продукты</a>
-                        </div>
-                        <div class="main__benefits_right">
-                            <div class="main__benefits_right-top">
-                                <div class="main__benefits_right-top__column">
-                                    <h2 class="main__benefits__h2 main__benefits__padding">Получайте повышенный доход от вложений</h2>
-                                    <div class="main__benefits__graph">
-                                        <div class="main__benefits__lines">
-                                            <div class="main__benefits__line"></div>
-                                            <div class="main__benefits__line"></div>
-                                            <div class="main__benefits__line"></div>
-                                            <div class="main__benefits__line"></div>
-                                            <div class="main__benefits__line"></div>
-                                            <div class="main__benefits__line"></div>
-                                        </div>
-                                        <div class="main__benefits__figures">
-                                            <div class="main__benefits__figureitem">
-                                                <p class="main__benefits__figurebold">до<span class="main__benefits__figurespan"> 8%</span></p>
-                                                <p class="main__benefits__figurep main__benefits__figurep_gray">Годовых</p>
-                                                <div class="main__benefits__figure "></div>
-                                            </div>
-                                            <div class="main__benefits__figureitem">
-                                                <p class="main__benefits__figurebold main__benefits_blue">до<span class="main__benefits__figurespan"> 19%</span></p>
-                                                <p class="main__benefits__figurep">Годовых</p>
-                                                <div class="main__benefits__figure main__benefits__figure_blue"></div>
-                                            </div>
-                                            <div class="main__benefits__figureitem">
-                                                <p class="main__benefits__figurebold">до<span class="main__benefits__figurespan"> 9%</span></p>
-                                                <p class="main__benefits__figurep main__benefits__figurep_gray">Годовых</p>
-                                                <div class="main__benefits__figure main__benefits__figure_gray"></div>
-                                            </div>
-                                        </div>
+                            <div class="main__benefits_right-top__column">
+                                <h2 class="main__benefits__h2 main__benefits__padding">Получайте повышенный доход от вложений</h2>
+                                <div class="main__benefits__graph">
+                                    <div class="main__benefits__lines">
+                                        <div class="main__benefits__line"></div>
+                                        <div class="main__benefits__line"></div>
+                                        <div class="main__benefits__line"></div>
+                                        <div class="main__benefits__line"></div>
+                                        <div class="main__benefits__line"></div>
+                                        <div class="main__benefits__line"></div>
                                     </div>
-                                    <div class="main__benefits__subwrap">
-                                        <p class="main__benefits__subscript">Банковские вклады</p>
-                                        <p class="main__benefits__subscript main__benefits_blue">Вклады НурФинанс</p>
-                                        <p class="main__benefits__subscript">Вложения в недвижимость </p>
+                                    <div class="main__benefits__figures">
+                                        <div class="main__benefits__figureitem">
+                                            <p class="main__benefits__figurebold">до<span class="main__benefits__figurespan"> 8%</span></p>
+                                            <p class="main__benefits__figurep main__benefits__figurep_gray">Годовых</p>
+                                            <div class="main__benefits__figure "></div>
+                                        </div>
+                                        <div class="main__benefits__figureitem">
+                                            <p class="main__benefits__figurebold main__benefits_blue">до<span class="main__benefits__figurespan"> 19%</span></p>
+                                            <p class="main__benefits__figurep">Годовых</p>
+                                            <div class="main__benefits__figure main__benefits__figure_blue"></div>
+                                        </div>
+                                        <div class="main__benefits__figureitem">
+                                            <p class="main__benefits__figurebold">до<span class="main__benefits__figurespan"> 9%</span></p>
+                                            <p class="main__benefits__figurep main__benefits__figurep_gray">Годовых</p>
+                                            <div class="main__benefits__figure main__benefits__figure_gray"></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="main__benefits_right-top__column">
-                                    <h2 class="main__benefits__h2">Инвестируйте со стабильным результатом</h2>
-                                    <div class="main__benefits__graph">
-                                        <div class="main__benefits__graphimg">
-                                            <img class="main__benefits__graphimg__inner" src="assets/images/linear-graph.svg" alt="">
-                                        </div>
-                                        <div class="main__benefits__graphimg2">
-                                            <img class="main__benefits__graphimg__inner" src="assets/images/circles-graph.svg" alt="">
-                                        </div>
-                                        <div class="main__benefits__lines">
-                                            <div class="main__benefits__line"></div>
-                                            <div class="main__benefits__line"></div>
-                                            <div class="main__benefits__line"></div>
-                                            <div class="main__benefits__line"></div>
-                                            <div class="main__benefits__line"></div>
-                                            <div class="main__benefits__line"></div>
-                                        </div>
+                                <div class="main__benefits__subwrap">
+                                    <p class="main__benefits__subscript">Банковские вклады</p>
+                                    <p class="main__benefits__subscript main__benefits_blue">Вклады НурФинанс</p>
+                                    <p class="main__benefits__subscript">Вложения в недвижимость </p>
+                                </div>
+                            </div>
+                            <div class="main__benefits_right-top__column">
+                                <h2 class="main__benefits__h2">Инвестируйте со стабильным результатом</h2>
+                                <div class="main__benefits__graph">
+                                    <div class="main__benefits__graphimg">
+                                        <img class="main__benefits__graphimg__inner" src="assets/images/linear-graph.svg" alt="">
                                     </div>
-                                    <div class="main__benefits__subwrap main__benefits__subwrap_left">
-                                        <div class="main__benefits__subinner">
-                                            <div class="main__benefits__circle"></div>
-                                            <p class="main__benefits__subscript main__benefits__subscript__p">Фондовый рынок</p>
-                                        </div>
-                                        <div class="main__benefits__subinner">
-                                            <div class="main__benefits__circle main__benefits__circle_blue"></div>
-                                            <p class="main__benefits__subscript main__benefits__subscript__p">Вклады НурФинанс</p>
-                                        </div>
+                                    <div class="main__benefits__graphimg2">
+                                        <img class="main__benefits__graphimg__inner" src="assets/images/circles-graph.svg" alt="">
+                                    </div>
+                                    <div class="main__benefits__lines">
+                                        <div class="main__benefits__line"></div>
+                                        <div class="main__benefits__line"></div>
+                                        <div class="main__benefits__line"></div>
+                                        <div class="main__benefits__line"></div>
+                                        <div class="main__benefits__line"></div>
+                                        <div class="main__benefits__line"></div>
+                                    </div>
+                                </div>
+                                <div class="main__benefits__subwrap main__benefits__subwrap_left">
+                                    <div class="main__benefits__subinner">
+                                        <div class="main__benefits__circle"></div>
+                                        <p class="main__benefits__subscript main__benefits__subscript__p">Фондовый рынок</p>
+                                    </div>
+                                    <div class="main__benefits__subinner">
+                                        <div class="main__benefits__circle main__benefits__circle_blue"></div>
+                                        <p class="main__benefits__subscript main__benefits__subscript__p">Вклады НурФинанс</p>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="main__benefits_bottom">
+                            <a href="" class="button button_small main__benefits__button">Инвестиционные продукты</a>
                             <div class="main__benefits_right-bottom">
                                 <h2 class="main__benefits__h2" >Возвращайте свои средства вовремя</h2>
                                 <div class="main__benefits__line"></div>

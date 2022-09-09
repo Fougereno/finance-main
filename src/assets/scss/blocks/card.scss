@@ -78,16 +78,25 @@
     max-width: 207px;
     font-size: 14px;
 }
+@media screen and (max-width:1365px) {
+    .card {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media screen and (max-width:889px) {
+    .card_small {
+        flex-grow: 1;
+    }
+}
 @media screen and (max-width:847px) {
     .card__img_mobile {
         position: absolute;
         right: -28%;
         z-index: 0;
-        transform: rotate(-7.37deg);
     }
-    .card__wrap {
-        position: relative;
-        z-index: 1;
+    .card__img_rotate {
+        transform: rotate(-7.37deg);
     }
     .card__inner {
         overflow: hidden;
@@ -112,5 +121,20 @@
     }
     .card__h2 {
         font-size: 24px;
+    }
+    .card__wrap {
+        position: relative;
+        z-index: 1;
+        flex-grow: 1;
+    }
+}
+@media screen and (max-width:513px) {
+    .card__img_mobile {
+        right: -46%;
+    }
+}
+@media screen and (max-width:420px) {
+    .card__img_mobile {
+        right: -66%;
     }
 }
