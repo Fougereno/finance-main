@@ -673,16 +673,29 @@
         padding-bottom: 50px;
     } 
     .main__benefits_bottom {
-        @include flex(column, space-between,center);
+        @include flex(column-reverse, space-between,center);
         flex-wrap: wrap;
     }
     .main__benefits_right-bottom {
         margin-top: 0;
         padding-top: 25px;
         flex-basis: 0;
+        width: 100%;
     }
     .main__benefits_right-bottom__columns {
         @include flex(column, space-between,center);
+        padding-bottom: 30px;
+    }
+    .main__benefits_right-bottom__column {
+        width: 100%;
+        padding: 0;
+    }
+    .main__scale {
+        max-width: 100%;
+    }
+    .main__benefits__button {
+        text-align: center;
+        width: 100%;
     }
 }
 @media screen and (max-width:1068px) {
