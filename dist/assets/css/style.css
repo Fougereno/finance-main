@@ -566,6 +566,15 @@ a {
   .header__buttons {
     flex-wrap: wrap;
   }
+
+  .header__h1 {
+    font-size: 20px;
+  }
+
+  .header__button__wrap {
+    padding-right: 20px;
+    padding-bottom: 10px;
+  }
 }
 .footer {
   background-color: #F0F4F8;
@@ -853,6 +862,15 @@ a {
     display: none;
   }
 }
+@media screen and (max-width: 380px) {
+  .footer__comments {
+    flex-wrap: wrap;
+  }
+
+  .footer__main_left {
+    padding-right: 0;
+  }
+}
 .nav {
   display: flex;
   justify-content: center;
@@ -1069,6 +1087,31 @@ a {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 380px) {
+  .nav__logo {
+    padding-right: 10px;
+  }
+
+  .nav__logowrap {
+    padding-bottom: 25px;
+  }
+
+  .nav__search {
+    display: none;
+  }
+
+  .nav__ul_blue {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav_blue__li {
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+}
 .card {
   padding: 7px;
 }
@@ -1176,15 +1219,13 @@ a {
   font-size: 14px;
 }
 
-@media screen and (max-width: 1365px) {
-  .card {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
 @media screen and (max-width: 889px) {
   .card_small {
     flex-grow: 1;
+  }
+
+  .card {
+    width: 100%;
   }
 }
 @media screen and (max-width: 847px) {
@@ -1252,7 +1293,7 @@ a {
   }
 
   .card__innerwrap__item:first-child {
-    padding-right: 40px;
+    padding-right: 16px;
   }
 
   .card__img_small {
@@ -1276,6 +1317,11 @@ a {
 @media screen and (max-width: 420px) {
   .card__img_mobile {
     right: -66%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .card__img_mobile, .card__img_small {
+    opacity: 0.5;
   }
 }
 .main__wrap {
@@ -2053,7 +2099,7 @@ a {
 }
 @media screen and (max-width: 1365px) {
   .main__products {
-    padding: 45px 25px 20% 25px;
+    padding: 45px 25px 10% 25px;
   }
 
   .card_small {
@@ -2061,7 +2107,7 @@ a {
   }
 
   .main__count_blue {
-    top: -26%;
+    top: -25%;
     left: 0;
     justify-content: center;
   }
@@ -2409,12 +2455,47 @@ a {
     font-size: 20px;
   }
 
+  .main__info__inner {
+    padding-top: 25px;
+  }
+
   .main__br {
     display: none;
+  }
+}
+@media screen and (max-width: 490px) {
+  .footer__green-header {
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .main__count__radios {
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 340px) {
   .main__count__radios {
     flex-wrap: wrap;
+  }
+
+  .main__count__p_white {
+    padding-left: 7px;
+    font-size: 14px;
+  }
+
+  .main__count__radio__padding {
+    padding-bottom: 10px;
+  }
+
+  .main__benefits__figure {
+    width: 70px;
+  }
+
+  .main__benefits_top {
+    padding-bottom: 0;
+  }
+
+  .main__scale_blue {
+    width: 30%;
   }
 }

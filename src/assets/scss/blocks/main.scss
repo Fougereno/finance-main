@@ -573,13 +573,13 @@
 }
 @media screen and (max-width: 1365px) {
     .main__products {
-        padding: 45px 25px 20% 25px;
+        padding: 45px 25px 10% 25px;
     }
     .card_small {
         flex-basis: 420px;
     }
     .main__count_blue {
-        top: -26%;
+        top: -25%;
         left: 0;
         justify-content: center;
     }
@@ -847,12 +847,41 @@
         padding-bottom: 0;
         font-size: 20px;
     }
+    .main__info__inner {
+        padding-top: 25px;
+    }
     .main__br {
         display: none;
+    }
+}
+@media screen and(max-width: 490px) {
+    .footer__green-header {
+        padding-top: 40px;
+    }
+}
+@media screen and(max-width: 380px) {
+    .main__count__radios {
+        flex-wrap: wrap;
     }
 }
 @media screen and(max-width: 340px) {
     .main__count__radios {
         flex-wrap: wrap;
+    }
+    .main__count__p_white {
+        padding-left: 7px;
+        font-size: 14px;
+    }
+    .main__count__radio__padding {
+        padding-bottom: 10px;
+    }
+    .main__benefits__figure {
+        width: 70px;
+    }
+    .main__benefits_top {
+        padding-bottom: 0;
+    }
+    .main__scale_blue {
+        width: 30%;
     }
 }

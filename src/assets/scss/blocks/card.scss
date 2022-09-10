@@ -78,15 +78,12 @@
     max-width: 207px;
     font-size: 14px;
 }
-@media screen and (max-width:1365px) {
-    .card {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
 @media screen and (max-width:889px) {
     .card_small {
         flex-grow: 1;
+    }
+    .card {
+        width: 100%;
     }
 }
 @media screen and (max-width:847px) {
@@ -141,7 +138,7 @@
         max-width: 210px;
     }
     .card__innerwrap__item:first-child {
-        padding-right: 40px;
+        padding-right: 16px;
     }
     .card__img_small {
         height: 200px;
@@ -162,5 +159,10 @@
 @media screen and (max-width:420px) {
     .card__img_mobile {
         right: -66%;
+    }
+}
+@media screen and (max-width:380px) {
+    .card__img_mobile, .card__img_small {
+        opacity: 0.5;
     }
 }

@@ -206,3 +206,11 @@
         display: none;
     }
 }
+@media screen and(max-width: 380px) {
+    .footer__comments {
+        flex-wrap: wrap;
+    }
+    .footer__main_left {
+        padding-right: 0;
+    }
+}

@@ -177,3 +177,21 @@
         font-size: 16px;
     }
 }
+@media screen and(max-width: 380px) {
+    .nav__logo {
+        padding-right: 10px;
+    }
+    .nav__logowrap {
+        padding-bottom: 25px;
+    }
+    .nav__search {
+        display: none;
+    }
+    .nav__ul_blue {
+        @include flex(column,flex-start, flex-start);
+    }
+    .nav_blue__li {
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+}
