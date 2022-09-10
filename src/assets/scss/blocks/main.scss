@@ -18,7 +18,7 @@
 .main__products__cards {
     @include flex(row, center, center);
     flex-wrap: wrap;
-    padding: 0 0 187px 0;
+    padding: 0 0 238px 0;
 }
 .main__count__padding {
     padding-bottom: 109px;
@@ -252,7 +252,7 @@
 }
 .main__benefits__h2 {
     font-size: 18px;
-    padding-bottom: 11px;
+    padding-bottom: 13px;
     line-height: 120%;
 }
 .main__benefits_top {
@@ -336,7 +336,7 @@
     font-size: 14px;
     line-height: 110%;
     max-width: 95px;
-    padding-bottom: 6px; 
+    padding-bottom: 8px; 
 }
 .main__benefits__figurep_gray {
     color: $gray;
@@ -349,7 +349,7 @@
     padding-bottom: 3px;
 }
 .main__benefits__figurespan {
-    font-size: 28px;
+    font-size: 30px;
 }
 .main__benefits__checkwrap {
     @include flex(row,flex-start,center);
@@ -619,7 +619,11 @@
         width: 14px;
     }
     .main__benefits_right-top__column:first-child {
-        order: 2;
+        order: 1;
+        padding-top: 56px;
+    }
+    .main__benefits__graph {
+        min-height: 135px;
     }
 }
 @media screen and (max-width:1273px) {
@@ -661,6 +665,9 @@
         .main__info_bold {
             color: $black;
         }
+    }
+    .main__feedback__h1 {
+        padding-left: 25px;
     }
 }
 @media screen and (max-width:1173px) {
@@ -704,11 +711,18 @@
     }
 }
 @media screen and (max-width:867px) {
+    .main__products {
+        padding-bottom: 0;
+    }
     .main__count__wrap {
         align-items: stretch;
     }
     .main__count__eval {
         max-width: unset;
+        flex-basis: 324px;
+    }
+    .main__count_blue {
+        top: -14%;
     }
     .main__count_blue__img {
         max-width: 50px;
@@ -724,17 +738,17 @@
         display: block;
         font-size: 16px;
     }
-    .main__count_blue {
-        top: -12%;
-    }
     .main__count__radio__padding {
         padding-right: 8px;
     }
 }
 @media screen and (max-width:541px) {
+    .main__h1 {
+        font-size: 28px;
+    }
     .main__count {
-        padding-right: 25px;
-        padding-left: 25px;
+        padding: 114px 25px 15px 25px;
+        border-radius: 29px;
     }
     .main__count__p_bold {
         font-size: 16px;
@@ -744,18 +758,97 @@
     }
     .main__count__card {
         flex-direction: row;
+        justify-content: flex-start;
         flex-wrap: wrap;
         min-height: auto;
+        border-radius: 10px;
+        padding: 13px 18px 18px;
+        flex-basis: auto;
+    }
+    .main__count_blue {
+        top: -19%;
+    }
+    .main__count__mobilebtn {
+        flex-grow: 1;
+        text-align: center;
+        padding: inherit;
+    }
+    .main__count__radios {
+        justify-content: space-between;
+    }
+    .main__count__radiowrap {
+        padding: 11px;
+    }
+    .main__count__radio__padding {
+        flex-grow: 1;
+    }
+    .main__count__radio__padding:last-child {
+        padding-right: 0;
+    }
+    .main__benefits__h1 {
+        font-size: 28px;
+        padding-top: 70px;
+        padding-bottom: 27px;
+    }
+    .main__benefits__h2_small {
+        max-width: 70%;
+    }
+    .main__benefits__h3 {
+        font-size: 14px;
+    }
+    .main__benefits__p_colored {
+        font-size: 14px;
+    }
+    .main__feedback {
+        padding-bottom: 0;
+    }
+    .main__feedback__h1 {
+        padding-bottom: 0;
     }
     .main__feedback__button {
         padding: 14px 23%;
     }
     .main__feedbaack__wrap {
-        padding-left: 25px;
-        padding-right: 0;
+        padding: 24px 0 70px 25px;
+        min-height: auto;
+    }
+    .main__feedback__img {
+        width: 312px;
+        height: 190px;
+        overflow: hidden;
+        &:before {
+           content: url(/assets/images/feedback-mobile.svg);
+        }
+    }
+    .main__feedback__imgcontent {
+        width: 312px;
+        height: 190px;
+        object-fit: contain;
     }
     .main__feedback__btnwrap {
         padding-right: 25px;
+    }
+    .main__feedback__p_bold {
+        font-size: 16px;
+    }
+    .main__feedback__p {
+        font-size: 12px;
+    }
+    .main__feedback__btnwrap {
+        padding-top: 20px;
+    }
+    .main__info {
+        padding-bottom: 61px;
+    }
+    .main__info__item {
+        padding: 21px 22px 22px 25px;
+    }
+    .main__info_bold {
+        padding-bottom: 0;
+        font-size: 20px;
+    }
+    .main__br {
+        display: none;
     }
 }
 @media screen and(max-width: 340px) {
