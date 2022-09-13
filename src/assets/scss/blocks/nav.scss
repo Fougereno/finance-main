@@ -148,16 +148,26 @@
 }
 @media screen and(max-width: 1072px) {
     .nav__ul {
-        display: none;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: opacity 300ms linear;
+        opacity: 0;
+        z-index: -1;
+    }
+    .nav__li {
+        padding-top: 0;
+        height: 0;
+        transition: height 300ms linear, padding-top 300ms linear;
     }
     .nav_visible {
         .nav__ul {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            width: 100%;
+            opacity: 1;
+            z-index: 1;
         }
         .nav__li {
+            height: 30px;
             padding-top: 15px;
         }
     }

@@ -2,7 +2,7 @@
     max-width: 1400px;
     margin: 0 auto;
 }
-.main__h1 {
+.main__h2 {
     font-weight: 300;
     font-size: 34px;
     padding-bottom: 30px;
@@ -12,7 +12,7 @@
     margin: 0 auto;
     padding-top: 98px;
 }
-.main__products__h1 {
+.main__products__h {
     padding-left: 15px;
 }
 .main__products__cards {
@@ -51,7 +51,7 @@
     padding: 36px;
     width: 100%;
 }
-.main__count__h1 {
+.main__count__h {
     line-height: 110%;
     max-width: 405px;
 }
@@ -246,11 +246,11 @@
     border-radius: 20px 0px;
     padding: 14px 32px;
 }
-.main__benefits__h1 {
+.main__benefits__h {
     padding-top: 109px;
     padding-bottom: 48px;
 }
-.main__benefits__h2 {
+.main__benefits__h {
     font-size: 18px;
     padding-bottom: 13px;
     line-height: 120%;
@@ -442,7 +442,7 @@
 .main__feedback {
     padding-bottom: 124px;
 }
-.main__feedback__h1 {
+.main__feedback__h {
     max-width: 1247px;
     margin: 0 auto;
 }
@@ -644,9 +644,6 @@
     .main__info__item {
         width: 100%;
     }
-    .main__info__inneritem {
-        display: none;
-    }
     .main__info__bgimg {
         display: none;
     }
@@ -657,21 +654,34 @@
     }
     .main__info_bold {
         color: $blue;
+    }               
+    .main__info__inneritem {
+        height: 0;
+        opacity: 0;
+        transition: height 300ms linear, padding-top 300ms linear, opacity 300ms linear;
     }
     .main__info_visible {
         .main__info__inneritem {
             display: flex;
+            height: 72px;
+            opacity: 1;
         }
         .main__info_bold {
             color: $black;
         }
+        .main__info__mobileimg {
+            display: none;
+        }
+        .main__info__mobileimg_visible {
+            display: block;
+        }
     }
-    .main__feedback__h1 {
+    .main__feedback__h {
         padding-left: 25px;
     }
 }
 @media screen and (max-width:1173px) {
-    .main__benefits__h1 {
+    .main__benefits__h {
         max-width: 371px;
         margin: 0 auto;
     }
@@ -743,7 +753,7 @@
     }
 }
 @media screen and (max-width:541px) {
-    .main__h1 {
+    .main__h2 {
         font-size: 28px;
     }
     .main__count {
@@ -766,7 +776,7 @@
         flex-basis: auto;
     }
     .main__count_blue {
-        top: -19%;
+        top: -25%;
     }
     .main__count__mobilebtn {
         flex-grow: 1;
@@ -785,12 +795,12 @@
     .main__count__radio__padding:last-child {
         padding-right: 0;
     }
-    .main__benefits__h1 {
+    .main__benefits__h {
         font-size: 28px;
         padding-top: 70px;
         padding-bottom: 27px;
     }
-    .main__benefits__h2_small {
+    .main__benefits__h_small {
         max-width: 70%;
     }
     .main__benefits__h3 {
@@ -802,7 +812,7 @@
     .main__feedback {
         padding-bottom: 0;
     }
-    .main__feedback__h1 {
+    .main__feedback__h {
         padding-bottom: 0;
     }
     .main__feedback__button {

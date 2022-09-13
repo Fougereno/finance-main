@@ -208,6 +208,12 @@
     }
     .footer__line {
         display: block;
+    }    
+    .footer__a {
+        height: 0;
+        opacity: 0;
+        padding-bottom: 0;
+        transition: height 300ms linear, padding-bottom 300ms linear, opacity 300ms linear, padding-top 300ms linear;
     }
     .footer__visible {
         color: $black;
@@ -215,7 +221,9 @@
             color: $black;
         }
         .footer__a {
-            display: block;
+            opacity: 1;
+            height: 40px;
+            padding-bottom: 20px;
         }
         .footer__imgvis {
             display: block;
@@ -226,9 +234,6 @@
     }
     .footer__navitem {
         min-height: auto;
-    }
-    .footer__a {
-        display: none;
     }
     .footer__main {
         padding-top: 25px;

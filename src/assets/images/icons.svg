@@ -237,7 +237,7 @@
     <path d="M17.7627 1.04443L9.39233 9.4148L1.02196 1.04443" stroke="#0000DE" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
 
-    <symbol id="footervisible" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="visible" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M17.7627 9.74072L9.39233 1.37035L1.02196 9.74072" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
 
