@@ -120,12 +120,17 @@
     padding: 14px 30px;
     min-height: 48px;
 }
+.nav__button_mobile {
+    &:visited {
+        color: $bluegray;
+    }
+}
 .nav__logo {
     display: none;
     padding-left: 17px;
 }
 .nav__logowrap {
-    @include flex(row, flex-start, center);
+    display: none;
 }
 @media screen and(max-width: 1276px) {
     .nav__city, .nav__tel, .nav__lang,.nav__button,.nav__info {
@@ -141,6 +146,9 @@
         border-radius: 16px 0px;
         color: $white;
         padding: 8px 15px;
+    }
+    .nav__logowrap {
+        @include flex(row, flex-start, center);
     }
     .nav__search {
         justify-self: flex-end;

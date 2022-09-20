@@ -1,5 +1,5 @@
 let burger = document.querySelector(".nav__burger");
-let radiowrap = document.querySelector(".main__count__radiowrap"); 
+let radiowrap = document.querySelectorAll(".main__count__radiowrap"); 
 let radio = document.querySelectorAll(".main__count__radio"); 
 let checkel = document.getElementsByClassName("main__count_checked");
 const rangeInputs = document.querySelectorAll('input[type="range"]'); 
@@ -7,8 +7,8 @@ let burgermenu = document.querySelector(".nav_green");
 let footer = document.querySelectorAll(".footer__navitem");
 let info = document.querySelectorAll(".main__info__item");
 
-radio.forEach(function(element) {
-    element.addEventListener('change', changeradio)
+radiowrap.forEach(function(element) {
+  element.addEventListener('click', changeradio)
 })
 rangeInputs.forEach(input => {
   input.addEventListener('input', handleInputChange)
@@ -33,15 +33,17 @@ function animateburger() {
       burgermenu.classList.add ("nav_visible");
     };
 }
+
 function changeradio() {
-    for (let i = 0; i < checkel.length; i++) {
-        checkel[i].classList.remove('main__count_checked');
-    }
-    if (this.checked) {
-      this.parentNode.classList.add('main__count_checked');
-    } else {
-      this.parentNode.classList.remove('main__count_checked');
-    }
+  radiowrap.forEach (element => {
+    element.classList.remove('main__count_checked'); 
+  });
+  this.classList.add('main__count_checked');
+  for (let i = 0; i < this.childNodes.length; i++) {
+    if (this.childNodes[i].className == "main__count__radio") {
+      this.childNodes[i].checked = true;
+    } 
+  }       
 }
 function handleInputChange(e) {
   let target = e.target   

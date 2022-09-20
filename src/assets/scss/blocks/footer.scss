@@ -38,7 +38,10 @@
     font-size: 37px;
     font-weight: 700;
     color: $blue;
-    padding-bottom: 8px;
+    color:$blue;
+    &:visited {
+        color:$blue;
+    }
 }
 .footer__h2 {
     color: $blue;
@@ -50,8 +53,14 @@
     padding-bottom: 25px;
     line-height: 110%;
     font-weight: 400;
+    &:hover {
+        text-shadow: 0 0 2px $bluegray;
+    }
+    &:active {
+        text-shadow: 0 0 2px $gray;
+    }
 }
-.footer__p {
+.footer__p, .footer__support {
     color: $green;
     font-size: 12px;
     line-height: 110%;
@@ -192,6 +201,10 @@
     .footer__main_bottom {
         padding-top: 31px;
     }
+    .footer__navitem {
+        padding-right: 25px;
+        flex-basis: 220px;
+    }
 }
 @media screen and (max-width: 490px) {
     .footer__nav {
@@ -199,6 +212,8 @@
     }
     .footer__navitem {
         width: 100%;
+        padding-right: 0;
+        flex-basis: unset;
     }
     .footer__menuimg {
         display: block;

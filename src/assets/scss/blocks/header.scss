@@ -46,6 +46,12 @@
     font-weight: 300;
     font-size: 18px;
 }
+.header__search {
+    transition: transform 300ms linear;
+    &:hover {
+        transform: scale(1.1)
+    }
+}
 .header__main {
     @include flex(row, space-between, flex-start); 
     flex-wrap: wrap;

@@ -247,13 +247,15 @@
     padding: 14px 32px;
 }
 .main__benefits__h {
+    font-size: 34px;
     padding-top: 109px;
-    padding-bottom: 48px;
-}
-.main__benefits__h {
-    font-size: 18px;
-    padding-bottom: 13px;
+    padding-bottom: 33px;
     line-height: 120%;
+}
+.main__benefits__h2 {
+    font-size: 18px;
+    line-height: 120%;
+    padding-bottom: 11px;
 }
 .main__benefits_top {
     width: 100%;
@@ -533,12 +535,18 @@
     font-size: 14px;
     padding-bottom: 10px;
 }
-.main__info__p {
+.main__info__a {
     color: $blue;
     font-size: 16px;
     font-weight: 500;
     padding-bottom: 33px;
     line-height: 120%;
+    &:hover {
+        text-shadow: 0 0 2px $bluegray;
+    }
+    &:active {
+        text-shadow: 0 0 2px $blue;
+    }
 }
 .main__info_bold {font-weight: 700;
     font-size: 22px;
@@ -554,7 +562,7 @@
     padding-top: 8px;
     padding-right: 19px;
 }
-.main__info__mobileimg {
+.main__info__mobileimg, .main__info__mobileimg_visible {
     display: none
 }
 .main__info__inneritem {
@@ -682,8 +690,9 @@
 }
 @media screen and (max-width:1173px) {
     .main__benefits__h {
-        max-width: 371px;
+        max-width: 380px;
         margin: 0 auto;
+        font-size: 28px;
     }
     .main__benefits_top {
         @include flex(column, space-between,center);
