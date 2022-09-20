@@ -843,6 +843,21 @@ a {
     padding-bottom: 25px;
   }
 
+  .footer__main_left {
+    padding-right: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+
+  .footer_left__item {
+    padding-right: 25px;
+  }
+  .footer_left__item:last-child {
+    padding-right: 0;
+  }
+
   .footer__search {
     max-width: unset;
   }
@@ -927,6 +942,14 @@ a {
 
   .footer__main_left {
     padding-right: 0;
+  }
+
+  .footer__h1 {
+    font-size: 30px;
+  }
+
+  .footer__city {
+    font-size: 14px;
   }
 }
 .nav {
@@ -2031,6 +2054,18 @@ a {
   left: -40px;
 }
 
+.main__feedback__check {
+  padding-right: 10px;
+  transition: transform 300ms linear;
+  cursor: pointer;
+}
+.main__feedback__check:hover {
+  transform: scale(1.1);
+}
+.main__feedback__check:active {
+  transform: scale(1.2);
+}
+
 .main__feedback__arrow:nth-child(2) {
   left: auto;
   right: -40px;
@@ -2058,12 +2093,46 @@ a {
   height: 220px;
   position: relative;
 }
-.main__feedback__img:before {
-  content: url(/assets/images/feedback.svg);
+
+.main__feedback__playitem1 {
+  width: 85px;
+  height: 173px;
   display: inline-block;
   position: absolute;
-  right: 0;
-  top: -9px;
+  right: 53px;
+  top: 17px;
+  background: linear-gradient(0deg, rgba(102, 133, 255, 0.3), rgba(102, 133, 255, 0.3)), linear-gradient(126.6deg, rgba(255, 255, 255, 0.12) 28.69%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 2px 2px 24px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 100% 0% 100% 0%/35% 55% 35% 55%;
+}
+
+.main__feedback__playitem2 {
+  position: absolute;
+  top: 94px;
+  right: 67px;
+  z-index: 10;
+  transition: transform 300ms linear;
+}
+.main__feedback__playitem2:hover {
+  transform: scale(1.15);
+}
+
+.main__feedback__playitem3 {
+  width: 66px;
+  height: 136px;
+  display: inline-block;
+  position: absolute;
+  right: 25px;
+  top: 66px;
+  background: linear-gradient(0deg, rgba(32, 32, 235, 0.3), rgba(32, 32, 235, 0.3)), linear-gradient(126.6deg, rgba(255, 255, 255, 0.12) 28.69%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 2px 2px 24px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 100% 0% 100% 0%/35% 55% 35% 55%;
 }
 
 .main__feedback__p {

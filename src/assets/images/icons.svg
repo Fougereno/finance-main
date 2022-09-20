@@ -245,4 +245,8 @@
     <path d="M1 1L11 11L1 21" stroke="#0000DE" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
 
+    <symbol id="play" viewBox="0 0 37 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9.52709 1.66312L33.5944 15.5459C37.7479 17.9356 37.7479 23.9098 33.5944 26.2994L9.52709 40.1822C5.43053 42.5719 0.25293 39.6133 0.25293 34.8339V7.01142C0.25293 2.23209 5.43053 -0.726545 9.52709 1.66312Z" fill="white"/>
+    </symbol>
+
 </svg>
