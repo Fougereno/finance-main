@@ -1,21 +1,21 @@
 <header class="header">
     <div class="header__wrap">
-        <div class="header__bg">
-            <img src="assets\images\bg.svg" alt="" class="header__bg__item header__bg__item1">
-            <img src="assets\images\bg2.svg" alt="" class="header__bg__item header__bg__item2">
-            <img src="assets\images\bg3.svg" alt="" class="header__bg__item header__bg__item3">
-            <img src="assets\images\bg4.svg" alt="" class="header__bg__item header__bg__item4">
-            <img src="assets\images\bg5.svg" alt="" class="header__bg__item header__bg__item5">
-            <img src="assets\images\bg6.svg" alt="" class="header__bg__item header__bg__item6">
-            <img src="assets\images\bg7.svg" alt="" class="header__bg__item header__bg__item7">
+        <div class="header__bg headbg">
+            <img src="assets\images\bg.svg" alt="" class="headbg__item headbg__item_1">
+            <img src="assets\images\bg2.svg" alt="" class="headbg__item headbg__item_2">
+            <img src="assets\images\bg3.svg" alt="" class="headbg__item headbg__item_3">
+            <img src="assets\images\bg4.svg" alt="" class="headbg__item headbg__item_4">
+            <img src="assets\images\bg5.svg" alt="" class="headbg__item headbg__item_5">
+            <img src="assets\images\bg6.svg" alt="" class="headbg__item headbg__item_6">
+            <img src="assets\images\bg7.svg" alt="" class="headbg__item headbg__item_7">
         </div>
         <nav class="nav">
-            <div class="nav_green">
+            <div class="nav__wrapper">
                 <div class="nav__logowrap">
-                    <div class="nav__burger">
-                        <div class="nav__burger__line nav__burger__line1"></div>
-                        <div class="nav__burger__line nav__burger__line2"></div>
-                        <div class="nav__burger__line nav__burger__line3"></div>
+                    <div class="nav__burger burger">
+                        <div class="burger__line burger__line_1"></div>
+                        <div class="burger__line burger__line_2"></div>
+                        <div class="burger__line burger__line_3"></div>
                     </div>
                     <svg width="159" height="32" class="nav__logo"><use xlink:href="assets/images/icons.svg#logo-mobile"></use></svg>
                 </div>
@@ -23,30 +23,34 @@
                 <p class="nav__city">Город  Казань</p>
                 <a href="" class="nav__button_mobile">Личный Кабинет</a>
                 <ul class="nav__ul">
-                    <li class="nav__li nav_green__li">О компании</li>
-                    <li class="nav__li nav_green__li">Отзывы</li>
-                    <li class="nav__li nav_green__li">Халяль подробно</li>
-                    <li class="nav__li nav_green__li">Отчетность</li>
-                    <li class="nav__li nav_green__li">Наши партнеры</li>
-                    <li class="nav__li nav_green__li">Сотрудничество</li>
-                    <li class="nav__li nav_green__li">Контакты</li>
+                    <li class="nav__li nav__li_green">О компании</li>
+                    <li class="nav__li nav__li_green">Отзывы</li>
+                    <li class="nav__li nav__li_green">Халяль подробно</li>
+                    <li class="nav__li nav__li_green">Отчетность</li>
+                    <li class="nav__li nav__li_green">Наши партнеры</li>
+                    <li class="nav__li nav__li_green">Сотрудничество</li>
+                    <li class="nav__li nav__li_green">Контакты</li>
                 </ul>
                 <a href="" class=" nav__lang">RU</a>
             </div>
             <span class="nav__line"></span>
-            <div class="nav_blue">
+            <div class="nav__wrapper nav__wrapper_blue">
                 <svg width="228" height="46"  class="header__logo"><use xlink:href="assets/images/icons.svg#logo"></use></svg>
                 <ul class="nav__ul_blue">
-                    <li class="nav_blue__li">Инвестиции</li>
-                    <li class="nav_blue__li">Рассрочка</li>
-                    <li class="nav_blue__li">Калькулятор</li>
+                    <li class="nav__li_blue">Инвестиции</li>
+                    <li class="nav__li_blue">Рассрочка</li>
+                    <li class="nav__li_blue">Калькулятор</li>
                 </ul>
-                <a href="tel:+78002700700" class="nav__tel">8 800 2700 700</a>
-                <a href="#" class="header__search">
+                <a href="tel:+78002700700" class="nav_hidden nav__tel">8 800 2700 700</a>
+                <a href="#" class="nav_hidden header__search">
                     <svg width="24" height="24" ><use xlink:href="assets/images/icons.svg#glass"></use></svg>
                 </a>
-                <a href="#" class="button nav__button">Личный Кабинет</a>
-                <a href="#" class="button button_white button_hidden nav__button">Онлайн-заявка</a>
+                <div class="nav__buttonwrap">
+                    <a href="#" class="nav_hidden button nav__button nav_hidden">Личный Кабинет</a>
+                </div>
+                <div class="nav__buttonwrap">
+                    <a href="#" class="nav_hidden button button_white nav_hidden nav__button">Онлайн-заявка</a>
+                </div>
             </div>
         </nav>
         <div class="header__main">
@@ -79,5 +83,12 @@
                 </a>
             </div>
         </div>
+    </div>
+    <div class="header__points header__points_hidden">
+        <div class="header__point"></div>
+        <div class="header__point"></div>
+        <div class="header__point header__point_active"></div>
+        <div class="header__point"></div>
+        <div class="header__point"></div>
     </div>
 </header>

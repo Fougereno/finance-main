@@ -1,9 +1,9 @@
-let burger = document.querySelector(".nav__burger");
+let burger = document.querySelector(".burger");
 let radiowrap = document.querySelectorAll(".main__count__radiowrap"); 
 let radio = document.querySelectorAll(".main__count__radio"); 
 let checkel = document.getElementsByClassName("main__count_checked");
 const rangeInputs = document.querySelectorAll('input[type="range"]'); 
-let burgermenu = document.querySelector(".nav_green");
+let burgermenu = document.querySelector(".nav");
 let footer = document.querySelectorAll(".footer__navitem");
 let info = document.querySelectorAll(".main__info__item");
 

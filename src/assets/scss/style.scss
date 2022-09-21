@@ -6,7 +6,6 @@ html {
     font-size: 62.5%;
 }
 body {
-    font-family: sans-serif;
     background-color: $white;
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
@@ -27,3 +26,4 @@ a {
 @import"blocks/nav";
 @import"blocks/card";
 @import"blocks/main";
+@import"blocks/burger";

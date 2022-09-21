@@ -13,12 +13,12 @@
     &:active {
         box-shadow: 0 0 5px $bluegray;
     }
-}
-.button_small {
-    padding: 14px;
-    border-radius: 20px 0px;
-}
-.button_white {
-    background-color: $white;
-    color: $blue;
+    &_small {
+        padding: 14px;
+        border-radius: 20px 0px;
+    }
+    &_white {
+        background-color: $white;
+        color: $blue;
+    }
 }

@@ -2,47 +2,18 @@
     @include flex(column, center, center);
     min-height: 133px;
 }
-.nav_green, .nav_blue {
+.nav__wrapper, .nav__wrapper_blue {
     @include flex(row, space-between, center);    
     width: 100%;
 }
-.nav_green {
+.nav__wrapper {
     padding: 20px 0;
     color: $green;
     font-size: 12px;
     font-weight: 400;
     flex-wrap: wrap;
 }
-.nav__burger {
-    @include flex(column,space-between, center);
-    display: none;
-    position: relative;
-    cursor: pointer;
-    min-height: 18px;
-}
-.nav_open .nav__burger__line1 {
-    position: absolute;
-    top: 50%;
-    transform: rotate(45deg);
-    transform-origin: center;
-    transition: transform 300ms linear;
-}
-.nav_open .nav__burger__line2 {
-    opacity: 0;
-    transition: opacity 300ms linear;
-}
-.nav_open .nav__burger__line3 {
-    position: absolute;
-    top: 50%;
-    transform: rotate(-45deg);
-    transform-origin: center;
-    transition: transform 300ms linear;
-}
-.nav__burger__line {
-    width: 22px;
-    border: 1px solid $black;
-}
-.nav_blue {
+.nav__wrapper_blue {
     padding-top: 30px;
     flex-wrap: wrap
 }
@@ -73,14 +44,14 @@
         content: url(/assets/images/tel.svg);
         position: absolute;
         left: 0;
-        bottom: 0;
+        top: 0;
     }
 }
 .nav__li {
     padding-right: 24px;
     cursor: pointer;
 }
-.nav_blue__li {
+.nav__li_blue {
     cursor: pointer;
     &:hover {
         text-shadow: 0 0 2px $bluegray;
@@ -89,7 +60,7 @@
         text-shadow: 0 0 2px $blue;
     }
 }
-.nav_green__li {
+.nav__li_green {
     &:hover {
         text-shadow: 0 0 2px $bluegray;
     }
@@ -97,7 +68,7 @@
         text-shadow: 0 0 2px $blue;
     }
 }
-.nav_green__li:last-child {
+.nav__li_green:last-child {
     position: relative;
     &::after {
     content: url(/assets/images/map.svg);
@@ -120,11 +91,6 @@
     padding: 14px 30px;
     min-height: 48px;
 }
-.nav__button_mobile {
-    &:visited {
-        color: $bluegray;
-    }
-}
 .nav__logo {
     display: none;
     padding-left: 17px;
@@ -133,8 +99,19 @@
     display: none;
 }
 @media screen and(max-width: 1276px) {
-    .nav__city, .nav__tel, .nav__lang,.nav__button,.nav__info {
+    .nav__city, .nav__lang,.nav__info {
         display: none;
+    }
+    .nav_hidden {
+        opacity: 0;
+        min-height: 0;
+        height: 0;
+        padding: 0;
+        transition: opacity 300ms linear,height 300ms linear ;
+    }
+    .nav__ul_blue {
+        order: 1;
+        flex-basis: 100%;
     }
     .nav__logo {
         display: flex;
@@ -146,12 +123,39 @@
         border-radius: 16px 0px;
         color: $white;
         padding: 8px 15px;
+        &:visited {
+            color: $white;
+        }
     }
     .nav__logowrap {
         @include flex(row, flex-start, center);
     }
     .nav__search {
         justify-self: flex-end;
+    }
+    .nav_visible {
+        .nav__ul {
+            opacity: 1;
+            z-index: 1;
+        }
+        .nav__li {
+            height: 30px;
+            padding-top: 15px;
+        }
+        .nav_hidden {
+            min-height: auto;
+            height: auto;
+            opacity: 1;
+            &.nav__button {
+                padding: 14px 30px;
+            } 
+            &.nav__tel {
+                padding-left: 18px;
+            }
+        }
+        .nav__ul_blue {
+            padding-top: 25px;
+        }
     }
 }
 @media screen and(max-width: 1072px) {
@@ -169,23 +173,25 @@
         height: 0;
         transition: height 300ms linear, padding-top 300ms linear;
     }
-    .nav_visible {
-        .nav__ul {
-            opacity: 1;
-            z-index: 1;
-        }
-        .nav__li {
-            height: 30px;
-            padding-top: 15px;
-        }
-    }
-    .nav__burger {
-        display: flex;
-    }
 }
 @media screen and(max-width: 992px) {
     .nav__lang {
         display: none;
+    }
+}
+@media screen and(max-width: 581px) {
+    .nav__tel, .nav__search {
+        padding-right: 25px;
+    }
+    .nav__buttonwrap {
+        height: 0;
+    }
+    .nav_visible {
+        .nav__buttonwrap {
+            flex-basis: 100%;
+            padding-top: 25px;
+            height: auto;
+        }
     }
 }
 @media screen and(max-width: 536px) {
@@ -199,17 +205,19 @@
     .nav__logo {
         padding-right: 10px;
     }
-    .nav__logowrap {
-        padding-bottom: 25px;
-    }
     .nav__search {
         display: none;
     }
     .nav__ul_blue {
         @include flex(column,flex-start, flex-start);
     }
-    .nav_blue__li {
+    .nav__li_blue {
         padding-right: 10px;
         padding-bottom: 10px;
+    }
+}
+@media screen and(max-width: 358px) {
+    .nav__logowrap {
+        padding-bottom: 25px;
     }
 }
