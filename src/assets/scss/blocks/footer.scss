@@ -247,18 +247,18 @@
         }
         &__visible {
             color: $black;
-            &__h2 {
+            .footer__h2 {
                 color: $black;
             }
-            &__a {
+            .footer__a {
                 opacity: 1;
                 height: 40px;
                 padding-bottom: 20px;
             }
-            &__imgvis {
+            .footer__imgvis {
                 display: block;
             }
-            &__imghid {
+            .footer__imghid {
                 display: none;
             }
         }

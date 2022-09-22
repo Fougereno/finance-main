@@ -21,7 +21,7 @@
         flex-wrap: wrap;
         padding: 0 0 238px 0;
     }
-    &__count__padding {
+    &__ctpadding {
         padding-bottom: 109px;
     }
     &__count {
@@ -52,51 +52,51 @@
         padding: 36px;
         width: 100%;
     }
-    &__count__h {
+    &__cth {
         line-height: 110%;
         max-width: 405px;
     }
-    &__count__p_white {
+    &__ctp_white {
         padding-left: 34px;
         font-size: 27px;
         color: $white;
     }
-    &__count__p_mobile {
+    &__ctp_mobile {
         display: none;
     }
-    &__count__p__wrap {
+    &__ctp__wrap {
         @include flex(row, space-between, center);
         padding-bottom: 6px;
     }
-    &__count__p_black {
+    &__ctp_black {
         font-size: 16px;
     }
-    &__count__p_bold {
+    &__ctp_bold {
         font-size: 18px;
         font-weight: 700;
     }
     &__count_pb {
         padding-bottom: 15px;
     }
-    &__count__wrap {
+    &__ctwrap {
         @include flex(row, space-between, flex-start);
         flex-wrap: wrap;
     }
-    &__count__graph {
+    &__ctgraph {
         position: relative;
         max-width: 390px;
     }
-    &__count__lines {
+    &__ctlines {
         position: absolute;
         width: 100%;
         @include flex(row, space-between, flex-start);
     }
-    &__count__line {
+    &__ctline {
         background: linear-gradient(180deg, rgba(198, 217, 233, 0) 0%, $lightgreen 49.48%, rgba(198, 217, 233, 0) 100%);
         width: 1px;
         height: 428px;
     }
-    &__count__point {
+    &__ctpoint {
         position: absolute;
         width: 10px;
         height: 10px;
@@ -104,46 +104,46 @@
         background-color: $white;
         border-radius: 50%;
     }
-    &__count__point1 {
+    &__ctpoint1 {
         top: 367px;
         left: -5px;
     }
-    &__count__point2 {
+    &__ctpoint2 {
         top: 354px;
         left: 60px;
     }
-    &__count__point3 {
+    &__ctpoint3 {
         top: 331px;
         left: 126px;
     }
-    &__count__point4 {
+    &__ctpoint4 {
         top: 299px;
         left: 189px;
     }
-    &__count__point5 {
+    &__ctpoint5 {
         top: 249px;
         left: 256px;
     }
-    &__count__point6 {
+    &__ctpoint6 {
         top: 175px;
         left: 320px;
     }
-    &__count__eval {
+    &__cteval {
         @include flex(column, space-between, flex-start);
         flex-basis: 460px;
         padding-top: 31px;
     }
-    &__count__inner {    
+    &__ctinner {    
         width: 100%;
         padding-bottom: 46px;
     }
-    &__count__radios {
+    &__ctradios {
         @include flex(row, flex-start, center);
     }
-    &__count__radio__padding {
+    &__ctradio__padding {
         padding-right: 12px;
     }
-    &__count__radiowrap {
+    &__ctradiowrap {
         border-radius: 20px 0px;
         padding: 15px;
         flex-basis: 224px;
@@ -154,7 +154,7 @@
         background: $white;
         border: none;
     }
-    &__count__radio {
+    &__ctradio {
         appearance: none;
         position: relative;
         background: $lightblue;
@@ -179,13 +179,13 @@
             opacity: 1;
         }
     }
-    &__count__label {
+    &__ctlabel {
         color: $green;
     }
-    &__count__radio:checked + &__count__label {
+    &__ctradio:checked + &__ctlabel {
         color: $black;
     } 
-    &__count__range {
+    &__ctrange {
         width: 100%; 
         height: 6px;
         appearance: none;
@@ -196,7 +196,7 @@
         background-size: 70% 100%;
         background-repeat: no-repeat;
     }
-    &__count__range::-webkit-slider-thumb {
+    &__ctrange::-webkit-slider-thumb {
         width: 30px;
         -webkit-appearance: none;
         height: 30px;
@@ -204,7 +204,7 @@
         background: $white;
         border-radius: 50%;
     }
-    &__count__card {
+    &__ctcard {
         @include flex(column, space-between, flex-start);
         border-radius: 10px 10px 120px 10px;
         background: $white;
@@ -252,7 +252,7 @@
         padding-bottom: 33px;
         line-height: 120%;
     }
-    &__main__benefhead {
+    &__benefhead {
         font-size: 18px;
         line-height: 120%;
         padding-bottom: 11px;
@@ -444,18 +444,18 @@
     &__feedback {
         padding-bottom: 124px;
     }
-    &__feedback__h {
+    &__feedh {
         max-width: 1247px;
         margin: 0 auto;
     }
-    &__feedbaack__wrap {
+    &__feedwrap {
         border-radius: 120px 6px;
         background-color: $lightblue;
         min-height:  460px;
         position: relative;
         padding: 59px 61px 17px 61px;
     }
-    &__feedback__arrow {
+    &__feedarrow {
         @include flex(row, center, center);
         width: 80px;
         height: 80px;
@@ -465,7 +465,7 @@
         top: 200px;
         left: -40px;
     }
-    &__feedback__check {
+    &__feedcheck {
         padding-right: 10px;
         transition: transform 300ms linear;
         cursor: pointer;
@@ -476,25 +476,25 @@
             transform: scale(1.2);
         }
     }
-    &__feedback__arrow:nth-child(2) {
+    &__feedarrow:nth-child(2) {
         left: auto;
         right: -40px;
     }
-    &__feedback__items {
+    &__fbitems {
         @include flex(row, space-between, center);
     }
-    &__feedback__item {
+    &__fbitem {
         @include flex(column, center, flex-start);
         padding: 7px;
     }
-    &__feedback__img {
+    &__feedimg {
         background-color: $white;
         border-radius: 70px 6px;
         width: 405px;
         height: 220px;
         position: relative;
     }
-    &__feedback__playitem1 {
+    &__fbplayitem1 {
         width: 85px;
         height: 173px;
         display: inline-block;
@@ -508,7 +508,7 @@
         border-right: 1px solid $arrowline;
         border-radius: 100% 0% 100% 0% / 35% 55% 35% 55%;
     }
-    &__feedback__playitem2 {
+    &__fbplayitem2 {
         cursor: pointer;
         position: absolute;
         top: 94px;
@@ -519,7 +519,7 @@
             transform: scale(1.15);
         }
     }
-    &__feedback__playitem3 {
+    &__fbplayitem3 {
         width: 66px;
         height: 136px;
         display: inline-block;
@@ -533,24 +533,24 @@
         border-right: 1px solid $arrowline;
         border-radius: 100% 0% 100% 0% / 35% 55% 35% 55%;
     }
-    &__feedback__p {
+    &__fbp {
         color: $green;
         font-size: 16px;
         font-weight: 400;
         line-height: 140%;
     }
-    &__feedback__p_bold {
+    &__fbp_bold {
         padding-top: 20px;
         font-size: 18px;
         font-weight: 700;
         line-height: 140%;
     }
-    &__feedback__btnwrap {
+    &__fbbtnwrap {
         width: 100%;
         @include flex(row,center,center);
         padding-top: 34px;
     }
-    &__feedback__button {
+    &__fbbutton {
         padding: 14px 111px;
     }
     &__info {
@@ -558,16 +558,16 @@
         max-width: 1245px;
         margin: 0 auto;
     }
-    &__info__items {
+    &__iitems {
         @include flex(row, space-between, flex-start);
         flex-wrap: wrap;
     }
-    &__info__itemwrap {
+    &__iitemwrap {
         padding-bottom: 14px;
         flex-basis: 405px;
         min-height: 360px;
     }
-    &__info__item {
+    &__iitem {
         position: relative;
         border-radius: 10px;
         background-color: $lightblue;
@@ -578,7 +578,7 @@
         font-size: 14px;
         padding-bottom: 10px;
     }
-    &__info__a {
+    &__ia {
         color: $blue;
         font-size: 16px;
         font-weight: 500;
@@ -596,29 +596,29 @@
         padding-bottom: 28px;
         max-width: 347px;
     }
-    &__info__bgimg {
+    &__ibgimg {
         position: absolute;
         top: 20px;
         right: 20px;
     }
-    &__info__img {
+    &__iimg {
         padding-top: 8px;
         padding-right: 19px;
     }
-    &__info__mobileimg, &__info__mobileimg_visible {
+    &__imobileimg, &__imobileimg_visible {
         display: none
     }
-    &__info__inneritem {
+    &__iinneritem {
         @include flex(row,flex-start,flex-start);
     }
     @media screen and (max-width: 1500px) {
-        &__feedback__arrow {
+        &__feedarrow {
             display: none;
         }
-        &__feedbaack__wrap {
+        &__feedwrap {
             background-color: $white;
         }
-        &__feedback__button {
+        &__fbbutton {
             background-color: $lightblue;
         }
     }
@@ -644,28 +644,28 @@
             @include flex(row, center,center);
             max-width: 100%;
         }
-        &__feedback__items {
+        &__fbitems {
             overflow: scroll;
         }
-        &__feedback__items::-webkit-scrollbar {
+        &__fbitems::-webkit-scrollbar {
             display: none;
         }
-        &__count__graph {
+        &__ctgraph {
             display: none;
         }
-        &__count__eval {
+        &__cteval {
             max-width: unset;
         }
         &__benefits {
             padding-right: 25px;
             padding-left: 25px;
         }
-        &__count__radiowrap {
+        &__ctradiowrap {
             min-height: 36px;
             max-width: 165px;
             font-size: 14px;
         }
-        &__count__radio {
+        &__ctradio {
             height: 14px;
             width: 14px;
             &::before {
@@ -686,20 +686,20 @@
             padding-left: 25px;
             padding-right: 25px;
         }
-        &__info__items {
+        &__iitems {
             @include flex(column,center,stretch);
         }
-        &__info__itemwrap {
+        &__iitemwrap {
             flex-basis: unset;
             min-height: unset;
         }
-        &__info__item {
+        &__iitem {
             width: 100%;
         }
-        &__info__bgimg {
+        &__ibgimg {
             display: none;
         }
-        &__info__mobileimg {
+        &__imobileimg {
             display: block;
             top: 25px;
             right: 22px;
@@ -707,28 +707,28 @@
         &__info_bold {
             color: $blue;
         }               
-        &__info__inneritem {
+        &__iinneritem {
             height: 0;
             opacity: 0;
             transition: height 300ms linear, padding-top 300ms linear, opacity 300ms linear;
         }
         &__info_visible {
-            &__info__inneritem {
+            .main__iinneritem {
                 display: flex;
                 height: 72px;
                 opacity: 1;
             }
-            &__info_bold {
+            .main__info_bold {
                 color: $black;
             }
-            &__info__mobileimg {
+            .main__imobileimg {
                 display: none;
             }
-            &__info__mobileimg_visible {
+            .main__imobileimg_visible {
                 display: block;
             }
         }
-        &__feedback__h {
+        &__feedh {
             padding-left: 25px;
         }
     }
@@ -778,7 +778,7 @@
         }
     }
     @media screen and (max-width:1068px) {
-        &__count__wrap {
+        &__ctwrap {
             @include flex(column, center,stretch);
         }
     }
@@ -786,10 +786,10 @@
         &__products {
             padding-bottom: 0;
         }
-        &__count__wrap {
+        &__ctwrap {
             align-items: stretch;
         }
-        &__count__eval {
+        &__cteval {
             max-width: unset;
             flex-basis: 324px;
         }
@@ -803,14 +803,14 @@
             padding: 17px 24px 17px 27px;
             min-height: 90px;
         }
-        &__count__p_laptop {
+        &__ctp_laptop {
             display: none;
         }
-        &__count__p_mobile {
+        &__ctp_mobile {
             display: block;
             font-size: 16px;
         }
-        &__count__radio__padding {
+        &__ctradio__padding {
             padding-right: 8px;
         }
     }
@@ -822,25 +822,25 @@
             padding: 114px 25px 15px 25px;
             border-radius: 29px;
         }
-        &__count__p_bold {
+        &__ctp_bold {
             font-size: 16px;
         }
-        &__count__p_black {
+        &__ctp_black {
             font-size: 14px;
         }
         &__count_blue {
             top: -25%;
         }
-        &__count__radios {
+        &__ctradios {
             justify-content: space-between;
         }
-        &__count__radiowrap {
+        &__ctradiowrap {
             padding: 11px;
         }
-        &__count__radio__padding {
+        &__ctradio__padding {
             flex-grow: 1;
         }
-        &__count__radio__padding:last-child {
+        &__ctradio__padding:last-child {
             padding-right: 0;
         }
         &__benefits__h {
@@ -860,49 +860,49 @@
         &__feedback {
             padding-bottom: 0;
         }
-        &__feedback__h {
+        &__feedh {
             padding-bottom: 0;
         }
-        &__feedback__button {
+        &__fbbutton {
             padding: 14px 23%;
         }
         &__feedbaack__wrap {
             padding: 24px 0 70px 25px;
             min-height: auto;
         }
-        &__feedback__img {
+        &__feedimg {
             width: 312px;
             height: 190px;
             overflow: hidden;
         }
-        &__feedback__imgcontent {
+        &__feedimgcontent {
             width: 312px;
             height: 190px;
             object-fit: contain;
         }
-        &__feedback__btnwrap {
+        &__fbbtnwrap {
             padding-right: 25px;
         }
-        &__feedback__p_bold {
+        &__fbp_bold {
             font-size: 16px;
         }
-        &__feedback__p {
+        &__fbp {
             font-size: 12px;
         }
-        &__feedback__btnwrap {
+        &__fbbtnwrap {
             padding-top: 20px;
         }
-        &__feedback__playitem1 {
+        &__fbplayitem1 {
             height: 17px;
             right: 40px;
             width: 71px;
             height: 146px;
         }
-        &__feedback__playitem2 {
+        &__fbplayitem2 {
             top: 76px;
             right: 46px;
         }
-        &__feedback__playitem3 {
+        &__fbplayitem3 {
             width: 56px;
             height: 114px;
             top: 59px;
@@ -911,14 +911,14 @@
         &__info {
             padding-bottom: 61px;
         }
-        &__info__item {
+        &__iitem {
             padding: 21px 22px 22px 25px;
         }
         &__info_bold {
             padding-bottom: 0;
             font-size: 20px;
         }
-        &__info__inner {
+        &__iinner {
             padding-top: 25px;
         }
         &__br {
@@ -926,7 +926,7 @@
         }
     }
     @media screen and (max-width:427px) {
-        &__count__card {
+        &__ctcard {
             flex-direction: row;
             justify-content: flex-start;
             flex-wrap: wrap;
@@ -935,26 +935,26 @@
             padding: 13px 18px 18px;
             flex-basis: auto;
         }
-        &__count__mobilebtn {
+        &__ctmobilebtn {
             flex-grow: 1;
             text-align: center;
             padding: inherit;
         }
     }
     @media screen and(max-width: 380px) {
-        &__count__radios {
+        &__ctradios {
             flex-wrap: wrap;
         }
     }
     @media screen and(max-width: 340px) {
-        &__count__radios {
+        &__ctradios {
             flex-wrap: wrap;
         }
-        &__count__p_white {
+        &__ctp_white {
             padding-left: 7px;
             font-size: 14px;
         }
-        &__count__radio__padding {
+        &__ctradio__padding {
             padding-bottom: 10px;
         }
         &__benefits__figure {
