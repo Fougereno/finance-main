@@ -2396,11 +2396,11 @@ a {
     width: 30%;
   }
 }
-<<<<<<< HEAD
+
 .chart {
   height: 360px;
   width: 376px;
-=======
+}
 
 .burger {
   display: flex;
@@ -2443,5 +2443,4 @@ a {
   .burger {
     display: flex;
   }
->>>>>>> 02eda5827b453683804b652e3fb100709b326a78
 }
