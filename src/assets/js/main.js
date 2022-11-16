@@ -65,3 +65,5 @@ function addinfoblock() {
       this.classList.add ("main__info_visible");
   }; 
 }
+
+

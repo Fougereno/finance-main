@@ -276,7 +276,11 @@
                                 <input  class="main__count__range" type="range" value="85" min="5" max="120">
                             </div>
                         </div>
-                        <div class="main__count__graph">
+                        <div>
+                            <canvas style="height: 360px;
+                            width: 376px;" class="chart" id="myChart"></canvas>
+                        </div>
+                        <!-- <div class="main__count__graph">
                             <div class="main__count__lines">
                                 <div class="main__count__line"></div>
                                 <div class="main__count__line"></div>
@@ -295,7 +299,7 @@
                                 <div class="main__count__point6 main__count__point"></div>
                             </div> 
                             <svg width="391" height="374" class="header__arrow__img"><use xlink:href="assets/images/icons.svg#graph"></use></svg>
-                        </div>
+                        </div> -->
                         <div class="main__count__card card">
                             <div class="card__innerwrap__item">
                                 <h2 class="card__h2">12,5%</h2>
@@ -667,6 +671,7 @@
                     </div>
                 </div>
             </footer>    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>

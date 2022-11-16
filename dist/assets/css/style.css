@@ -2554,3 +2554,7 @@ a {
     width: 30%;
   }
 }
+.chart {
+  height: 360px;
+  width: 376px;
+}
