@@ -6,7 +6,6 @@ html {
     font-size: 62.5%;
 }
 body {
-    font-family: sans-serif;
     background-color: $white;
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
@@ -17,7 +16,8 @@ body {
     box-sizing: border-box;
 }
 a {
-    text-decoration: none
+    text-decoration: none;
+    color: unset;
 }
 
 @import"blocks/button";
@@ -26,4 +26,8 @@ a {
 @import"blocks/nav";
 @import"blocks/card";
 @import"blocks/main";
+<<<<<<< HEAD
 @import"blocks/graph";
+=======
+@import"blocks/burger";
+>>>>>>> 02eda5827b453683804b652e3fb100709b326a78
