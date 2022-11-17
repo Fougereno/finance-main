@@ -24,7 +24,7 @@
     &__ctpadding {
         padding-bottom: 109px;
     }
-    &__count {
+    &__ct {
         margin: 0 auto;
         max-width: 1368px;
         background-color: $lightblue;
@@ -33,17 +33,17 @@
         position: relative;
         padding: 170px 61px 124px 61px;
     }
-    &__count_blue {
+    &__ct_blue {
         position: absolute;
         top: -67px;
         left: 62px;
         @include flex(row, center, center);
         flex-wrap: wrap;
     }
-    &__count_blue__inner {
+    &__ct_blue__inner {
         padding: 7px;
     }
-    &__count_blue__item {
+    &__ct_blue__item {
         @include flex(row, space-between, center);
         min-height: 135px;
         background-color: $blue;
@@ -75,7 +75,7 @@
         font-size: 18px;
         font-weight: 700;
     }
-    &__count_pb {
+    &__ct_pb {
         padding-bottom: 15px;
     }
     &__ctwrap {
@@ -150,7 +150,7 @@
         background: $lightblue;
         border: 1px solid $lightgreen;
     }
-    &__count_checked {
+    &__ct_checked {
         background: $white;
         border: none;
     }
@@ -204,7 +204,7 @@
         background: $white;
         border-radius: 50%;
     }
-    &__ctcard {
+    &__ct__card {
         @include flex(column, space-between, flex-start);
         border-radius: 10px 10px 120px 10px;
         background: $white;
@@ -629,18 +629,18 @@
         .card_small {
             flex-basis: 420px;
         }
-        &__count_blue {
+        &__ct_blue {
             top: -25%;
             left: 0;
             justify-content: center;
         }
-        &__count_blue__inner {
+        &__ct_blue__inner {
             flex-grow: 1;
             padding-right: 25px;
             padding-left: 25px;
             font-size: 16px;
         }
-        &__count_blue__item {
+        &__ct_blue__item {
             @include flex(row, center,center);
             max-width: 100%;
         }
@@ -793,13 +793,13 @@
             max-width: unset;
             flex-basis: 324px;
         }
-        &__count_blue {
+        &__ct_blue {
             top: -14%;
         }
-        &__count_blue__img {
+        &__ct_blue__img {
             max-width: 50px;
         }
-        &__count_blue__item {
+        &__ct_blue__item {
             padding: 17px 24px 17px 27px;
             min-height: 90px;
         }
@@ -818,7 +818,7 @@
         &__h2 {
             font-size: 28px;
         }
-        &__count {
+        &__ct {
             padding: 114px 25px 15px 25px;
             border-radius: 29px;
         }
@@ -828,7 +828,7 @@
         &__ctp_black {
             font-size: 14px;
         }
-        &__count_blue {
+        &__ct_blue {
             top: -25%;
         }
         &__ctradios {

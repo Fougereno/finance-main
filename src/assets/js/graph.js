@@ -1,7 +1,12 @@
 const { red } = require("ansi-colors");
 
 //chart.js
-const ctx = document.getElementById('myChart');
+const ctx = document.getElementById('myChart').getContext('2d');
+
+
+let gradient = ctx.createLinearGradient(0, 0, 0, 450);
+gradient.addColorStop(0.5, 'rgba(0, 0, 255, 1)');
+gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
 
 new Chart(ctx, {
     type: 'line',
@@ -9,11 +14,10 @@ new Chart(ctx, {
     labels: ['', '', '', '', '', '', ''],
     datasets: [
         {   
-            type: 'line',
             data: [0, 2, 8, 18, 40, 73, 134],
             borderWidth: 2,
             borderColor: '#355DFB',
-            backgroundColor: 'rgba(53, 93, 251, 0.1)',
+            backgroundColor: gradient,
             fill: true,
             pointRadius: 0,
           },
@@ -23,12 +27,13 @@ new Chart(ctx, {
         borderColor: '#0000DE', 
         backgroundColor: 'rgba(0, 0, 222, 0.1)',
         pointBackgroundColor: '#fff',
-        pointRadius: 4,
+        pointRadius: [4, 4, 4, 4, 4, 4, 0] ,
         fill: true,
     },
 ]
     },
     options: { 
+      responsive: true,
         plugins: {
             legend: {
                 display: false
@@ -41,9 +46,8 @@ new Chart(ctx, {
                 }
               },
               y: {
-                display: false,
                 grid: {
-                  display: false
+                  color: '#C6D9E9', 
                 }
               }
         }
